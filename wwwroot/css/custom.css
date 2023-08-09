@@ -1,0 +1,15 @@
+﻿.text-right{
+    text-align: right;
+}
+.img-language{
+    padding-right: 5px;
+}
+.form-group-custom .col-sm-2{
+    float:left;
+    text-align:right;
+    display: inline-block;
+}
+
+.form-group-custom .col-sm-10 {
+    display: inline-block;
+}
