@@ -29,4 +29,10 @@ public class CategoryController : Controller
         
         return View();
     }
+
+    public async Task<IActionResult> Register()
+    {
+
+        return View();
+    }
 }

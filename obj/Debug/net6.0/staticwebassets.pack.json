@@ -5,12 +5,36 @@
       "PackagePath": "staticwebassets\\hienv_asp.bundle.scp.css"
     },
     {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
       "Id": "D:\\C#\\hienv_asp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\C#\\hienv_asp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\image\\language\\bg-bg.png",
+      "PackagePath": "staticwebassets\\image\\language\\bg-bg.png"
+    },
+    {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\image\\language\\en-gb.png",
+      "PackagePath": "staticwebassets\\image\\language\\en-gb.png"
+    },
+    {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\image\\language\\nl-nl.png",
+      "PackagePath": "staticwebassets\\image\\language\\nl-nl.png"
+    },
+    {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\image\\no_image-100x100.png",
+      "PackagePath": "staticwebassets\\image\\no_image-100x100.png"
+    },
+    {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\js\\category.js",
+      "PackagePath": "staticwebassets\\js\\category.js"
     },
     {
       "Id": "D:\\C#\\hienv_asp\\wwwroot\\js\\site.js",

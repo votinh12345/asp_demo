@@ -22,6 +22,7 @@ namespace hienv_asp.Context
         public DbSet<BannerImageDescription> BannerImageDescription { set; get; }
         public DbSet<Blogs> Blogs { set; get; }
         public DbSet<Layout> Layout { set; get; }
+        public DbSet<Country> Country { set; get; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

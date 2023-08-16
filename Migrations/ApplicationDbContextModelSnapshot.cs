@@ -528,6 +528,44 @@ namespace hienv_asp.Migrations
                     b.ToTable("category_to_store");
                 });
 
+            modelBuilder.Entity("hienv_asp.Models.Country", b =>
+                {
+                    b.Property<int>("country_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("country_id"));
+
+                    b.Property<string>("address_format")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("iso_code_2")
+                        .IsRequired()
+                        .HasMaxLength(2)
+                        .HasColumnType("nvarchar(2)");
+
+                    b.Property<string>("iso_code_3")
+                        .IsRequired()
+                        .HasMaxLength(3)
+                        .HasColumnType("nvarchar(3)");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.Property<short>("postcode_required")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("status")
+                        .HasColumnType("smallint");
+
+                    b.HasKey("country_id");
+
+                    b.ToTable("oc_country");
+                });
+
             modelBuilder.Entity("hienv_asp.Models.ErrorViewModel", b =>
                 {
                     b.Property<string>("RequestId")
