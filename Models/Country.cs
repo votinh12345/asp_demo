@@ -17,12 +17,13 @@ namespace hienv_asp.Models
         public int country_id { get; set; }
 
         [Display(Name = "name")]
-        [StringLength(128)]
+        [Required(ErrorMessage = "Country Name do not exit!")]        
+        [StringLength(128, MinimumLength = 5, ErrorMessage = "{0} must be between {1} and {2} characters!")]
         public string name { get; set; }
 
         [Display(Name = "Iso Code 2")]
         [StringLength(2)]
-        public int iso_code_2 { get; set; }
+        public String iso_code_2 { get; set; }
 
         [Display(Name = "Iso Code 3")]
         [StringLength(3)]
@@ -38,11 +39,7 @@ namespace hienv_asp.Models
         [DefaultValue("1")]
         public Int16 status { get; set; }
 
-        public List<SelectListItem> Status { get; } = new List<SelectListItem>
-        {
-            new SelectListItem { Value = "1", Text = "Enabled" },
-            new SelectListItem { Value = "0", Text = "Disabled" }
-        };
+      
 
     }
 }

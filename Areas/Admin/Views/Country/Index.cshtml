@@ -13,9 +13,8 @@
                 <h1>@ViewData["Title"]</h1>
             </div>
             <div class="col-sm-6 text-right">
-                <button type="button" id="button-repair" data-bs-toggle="tooltip" title="" class="btn btn-light" data-bs-original-title="Rebuild" aria-label="Rebuild"><i class="fas fa-sync"></i></button>
                 <a asp-controller="Country" asp-area="Admin" asp-action="Create" data-bs-toggle="tooltip" title="" class="btn btn-primary" data-bs-original-title="Add New" aria-label="Add New"><i class="fas fa-plus"></i></a>
-                
+                <button type="button" data-toggle="tooltip" title="" class="btn btn-danger btn-delete-country" data-original-title="Delete" disabled><i class="fas fa-trash"></i></button>
             </div>
         </div>
     </div><!-- /.container-fluid -->
@@ -41,14 +40,26 @@
                                     <table id="example2" class="table table-bordered table-hover dataTable dtr-inline" aria-describedby="example2_info">
                                         <thead>
                                             <tr>
-                                                <th class="sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label=""><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', $(this).prop('checked'));" class=""></th>
-                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="">Category Name</th>
-                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Sort Order">Sort Order</th>
+                                                <th class="text-center sorting sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label=""><input type="checkbox" onclick="$('input[name*=\'selected-country\']').prop('checked', $(this).prop('checked'));" class="check-all-country"></th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="">Country Name</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="iso_code_2">ISO Code (2)</th>
+                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="iso_code_3">ISO Code (3)</th>
                                                 <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr class="odd">
+                                                    <td class="text-center dtr-control sorting_1" tabindex="0">
+                                                        <input type="checkbox" name="selected-country" value="@item.country_id" class="checkbox-country">
+                                                    </td>
+                                                    <td>@item.name</td>
+                                                    <td>@item.iso_code_2</td>
+                                                    <td>@item.iso_code_3</td>
+                                                    <td><a asp-controller="Country" asp-area="Admin" asp-action="Edit" asp-route-id="@item.country_id" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></a></td>
+                                                </tr>
+                                            }
                                         </tbody>
                                         <tfoot></tfoot>
                                     </table>
@@ -65,3 +76,7 @@
         <!-- /.row -->
     </div>
 </section>
+
+@section Scripts{
+    <script src="~/js/country.js"></script>
+}
