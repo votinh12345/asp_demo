@@ -1,4 +1,49 @@
-﻿.text-right{
+﻿#menu, #menu ul, #menu li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu {
+    margin-bottom: 25px;
+}
+#menu > li {
+    position: relative;
+    border-bottom: 1px solid #2b3642;
+}
+#menu > li > a {
+    font-size: 14px;
+    color: #b3cbdd;
+    padding-left: 20px;
+    border-bottom: 0 solid #585858;
+}
+#menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 0 solid #515151;
+}
+#menu > li > a > i {
+    font-size: 16px;
+    width: 18px;
+    margin-right: 5px;
+}
+#menu li li a:before {
+    font-family: 'font awesome 5 free';
+    content: "\f101";
+    font-weight: 900;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: margin ease .5s;
+}
+#menu li a.parent:after {
+    font-family: 'font awesome 5 free';
+    font-weight: 600;
+    float: right;
+    margin-right: 8px;
+}
+.text-right {
     text-align: right;
 }
 .img-language{
@@ -9,7 +54,6 @@
     text-align:right;
     display: inline-block;
 }
-
 .form-group-custom .col-sm-10 {
     display: inline-block;
 }
@@ -36,6 +80,15 @@
     max-width: 100%;
     height: auto;
 }
+#menu li a.parent:after {
+    content: "\f107";
+}
+#menu li a.collapsed:after {
+    content: "\f105";
+}
+#menu li li ul a {
+    padding-left: 40px;
+}
 .input-group-addon {
     padding: 8px 13px;
     font-size: 13px;
@@ -49,4 +102,13 @@
 }
 .text-center {
     text-align: center;
+}
+.table.table-bordered.table-hover.dataTable thead th{
+    border-bottom: none;
+}
+
+.btn-light {
+    color: #000;
+    background-color: #fff;
+    border-color: #dedede;
 }

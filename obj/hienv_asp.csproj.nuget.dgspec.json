@@ -75,6 +75,10 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"

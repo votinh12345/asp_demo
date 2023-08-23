@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\js\\category.js"
     },
     {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\js\\country.js",
+      "PackagePath": "staticwebassets\\js\\country.js"
+    },
+    {
       "Id": "D:\\C#\\hienv_asp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5DdKryQrqVDPJs9PGU5CyS3vIhBHj0KUzrZxyH9+5MA=",
+  "Hash": "Zj0wx9BLGWsHZVjSXR3fdxLImb+Lw0pcIdDM5CZgHBw=",
   "Source": "hienv_asp",
   "BasePath": "_content/hienv_asp",
   "Mode": "Default",
@@ -185,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\category.js"
+    },
+    {
+      "Identity": "D:\\C#\\hienv_asp\\wwwroot\\js\\country.js",
+      "SourceId": "hienv_asp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\hienv_asp\\wwwroot\\",
+      "BasePath": "_content/hienv_asp",
+      "RelativePath": "js/country.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\country.js"
     },
     {
       "Identity": "D:\\C#\\hienv_asp\\wwwroot\\js\\site.js",

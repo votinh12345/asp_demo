@@ -34,178 +34,190 @@
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <ul class="show" data-widget="treeview" role="menu" data-accordion="false" id="menu">
                         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
-                        <li class="nav-item menu-open">
+                        <li class="menu-dashboard">
                             <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Dashboard
-                                </p>
-                            </a>
+                                <i class="nav-icon fas fa-home"></i> Dashboard</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <i class="nav-icon fas fa-copy"></i>
-                                <p>
-                                    Catalog
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
+                        <li class="nav-item" id="menu-catalog">
+                            <a href="javascript:void(0)" class="parent collapsed" data-toggle="collapse" data-target="#collapse-1">
+                                <i class="nav-icon fas fa-tag"></i>Catalog
                             </a>
-                            <ul class="nav nav-treeview">
+                            <ul class="collapse" id="collapse-1">
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Category" asp-area="Admin" asp-action="Index">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Categories</p>
-                                    </a>
+                                    <a class="nav-link" asp-controller="Category" asp-area="Admin" asp-action="Index">Categories</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Products</p>
-                                    </a>
+                                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">Products</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/layout/boxed.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Recurring Profiles</p>
-                                    </a>
+                                    <a href="pages/layout/boxed.html" class="nav-link">Recurring Profiles</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Manufacturers</p>
-                                    </a>
+                                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">Manufacturers</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Reviews</p>
-                                    </a>
+                                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">Reviews</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Information</p>
-                                    </a>
+                                    <a href="pages/layout/fixed-topnav.html" class="nav-link">Information</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item" id="menu-catalog">
+                            <a href="javascript:void(0)" class="parent collapsed" data-toggle="collapse" data-target="#collapse-2">
+                                <i class="nav-icon fas fa-desktop"></i> Design
+                            </a>
+                            <ul class="collapse" id="collapse-2">
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">Layouts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/boxed.html" class="nav-link">Theme Editor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">Language Editor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">Banners</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/layout/fixed-topnav.html" class="nav-link">SEO URL</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item" id="menu-sale">
+                            <a href="javascript:void(0)" class="parent collapsed" data-toggle="collapse" data-target="#collapse-3">
+                                <i class="fas fa-shopping-cart"></i>
+                                Sales
+                            </a>
+                            <ul class="collapse" id="collapse-3">
+                                <li class="nav-item">
+                                    <a href="pages/charts/chartjs.html" class="nav-link">Orders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/charts/flot.html" class="nav-link">Recurring Profiles</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/charts/inline.html" class="nav-link">Returns</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/charts/uplot.html" class="nav-link">Gift Vouchers</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
-                                <p>
-                                    Sales
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
+                            <a href="javascript:void(0)" class="parent collapsed" data-toggle="collapse" data-target="#collapse-4">
+                                <i class="nav-icon fas fa-user"></i>
+                                Customers
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="pages/charts/chartjs.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Orders</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/flot.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Recurring Profiles</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/inline.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Returns</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pages/charts/uplot.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Gift Vouchers</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tree"></i>
-                                <p>Customers<i class="fas fa-angle-left right"></i></p>
-                            </a>
-                            <ul class="nav nav-treeview">
+                            <ul class="collapse" id="collapse-4">
                                 <li class="nav-item">
                                     <a href="pages/UI/general.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Customers</p>
+                                        Customers
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="pages/UI/icons.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Customer VAT Numbers</p>
+                                        Customer VAT Numbers
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="pages/UI/buttons.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Customer Groups</p>
+                                        Customer Groups
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="pages/UI/sliders.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Custom Fields</p>
+                                        Custom Fields>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-edit"></i>
-                                <p>System<i class="fas fa-angle-left right"></i></p>
+                            <a href="javascript:void(0)" class="parent collapsed" data-toggle="collapse" data-target="#collapse-5">
+                                <i class="nav-icon fas fa-cog"></i>
+                                System
                             </a>
-                            <ul class="nav nav-treeview">
+                            <ul class="collapse" id="collapse-5">
                                 <li class="nav-item">
-                                    <a href="pages/forms/general.html" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Settings</p>
-                                    </a>
+                                    <a href="pages/forms/general.html" class="nav-link">Settings</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>
-                                            LocalisationLocalisation<i class="fas fa-angle-left right"></i>
-                                        </p>
+                                    <a href="javascript:void(0)" class="parent collapsed" data-toggle="collapse" data-target="#collapse-5-1">
+                                        Users
                                     </a>
-                                    <ul class="nav nav-treeview" style="display: none;">
+                                    <ul class="collapse" id="collapse-5-1">
                                         <li class="nav-item">
-                                            <a href="pages/examples/login-v2.html" class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Stock Statuses</p>
-                                            </a>
+                                            <a class="nav-link" asp-controller="Languages" asp-area="Admin" asp-action="Index">User Groups</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href ="javascript:void(0)" class="parent collapsed" data-toggle="collapse" data-target="#collapse-5-2">
+                                        Localisation
+                                    </a>
+                                    <ul class="collapse" id="collapse-5-2">
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Languages" asp-area="Admin" asp-action="Index">Languages</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" asp-controller="Country" asp-area="Admin" asp-action="Index">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Countries</p>
-                                            </a>
+                                            <a href="pages/examples/login-v2.html" class="nav-link">Stock Statuses</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="pages/examples/forgot-password-v2.html" class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Zones</p>
-                                            </a>
+                                            <a class="nav-link" asp-controller="Country" asp-area="Admin" asp-action="Index">Countries</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="pages/examples/recover-password-v2.html" class="nav-link">
-                                                <i class="far fa-circle nav-icon"></i>
-                                                <p>Geo Zones</p>
-                                            </a>
+                                            <a href="pages/examples/forgot-password-v2.html" class="nav-link">Zones</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages/examples/recover-password-v2.html" class="nav-link">Geo Zones</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="parent collapsed" data-toggle="collapse" data-target="#collapse-5-3">
+                                        Maintenance
+                                    </a>
+                                    <ul class="collapse" id="collapse-5-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Languages" asp-area="Admin" asp-action="Index">Upgrade</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages/examples/login-v2.html" class="nav-link">Backup / Restore</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages/examples/recover-password-v2.html" class="nav-link">Uploads</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages/examples/recover-password-v2.html" class="nav-link">Error Logs</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="parent collapsed" data-toggle="collapse" data-target="#collapse-6">
+                                <i class="nav-icon fas fa-chart-bar"></i>
+                                Reports
+                            </a>
+                            <ul class="collapse" id="collapse-6">
+                                <li class="nav-item">
+                                    <a href="pages/UI/general.html" class="nav-link">Reports</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/UI/icons.html" class="nav-link">Who's Online</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/UI/buttons.html" class="nav-link">Statistics</a>
+                                </li>
+                            </ul>
+                        </li>
+
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

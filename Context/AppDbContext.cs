@@ -23,6 +23,8 @@ namespace hienv_asp.Context
         public DbSet<Blogs> Blogs { set; get; }
         public DbSet<Layout> Layout { set; get; }
         public DbSet<Country> Country { set; get; }
+        public DbSet<Language> Language { set; get; }
+        public DbSet<Currency> Currency { set; get; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

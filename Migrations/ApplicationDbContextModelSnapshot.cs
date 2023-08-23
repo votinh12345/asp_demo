@@ -566,12 +566,109 @@ namespace hienv_asp.Migrations
                     b.ToTable("oc_country");
                 });
 
+            modelBuilder.Entity("hienv_asp.Models.Currency", b =>
+                {
+                    b.Property<int>("currency_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("currency_id"));
+
+                    b.Property<string>("code")
+                        .IsRequired()
+                        .HasMaxLength(3)
+                        .HasColumnType("nvarchar(3)");
+
+                    b.Property<DateTime?>("date_modified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("decimal_place")
+                        .IsRequired()
+                        .HasMaxLength(1)
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<short>("status")
+                        .HasColumnType("smallint");
+
+                    b.Property<string>("symbol_left")
+                        .IsRequired()
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
+
+                    b.Property<string>("symbol_right")
+                        .IsRequired()
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
+
+                    b.Property<string>("title")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<decimal>("value")
+                        .HasPrecision(15, 8)
+                        .HasColumnType("decimal(15,8)");
+
+                    b.HasKey("currency_id");
+
+                    b.ToTable("oc_currency");
+                });
+
             modelBuilder.Entity("hienv_asp.Models.ErrorViewModel", b =>
                 {
                     b.Property<string>("RequestId")
                         .HasColumnType("nvarchar(max)");
 
                     b.ToTable("ErrorViewModel");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.Language", b =>
+                {
+                    b.Property<int>("language_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("language_id"));
+
+                    b.Property<string>("code")
+                        .IsRequired()
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
+
+                    b.Property<string>("directory")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<string>("filename")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<string>("image")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<string>("locale")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<short>("sort_order")
+                        .HasColumnType("smallint");
+
+                    b.Property<short>("status")
+                        .HasColumnType("smallint");
+
+                    b.HasKey("language_id");
+
+                    b.ToTable("oc_language");
                 });
 
             modelBuilder.Entity("hienv_asp.Models.Layout", b =>

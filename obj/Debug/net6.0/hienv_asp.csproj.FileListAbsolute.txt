@@ -403,3 +403,10 @@ D:\C#\hienv_asp\obj\Debug\net6.0\refint\hienv_asp.dll
 D:\C#\hienv_asp\obj\Debug\net6.0\hienv_asp.pdb
 D:\C#\hienv_asp\obj\Debug\net6.0\hienv_asp.genruntimeconfig.cache
 D:\C#\hienv_asp\obj\Debug\net6.0\ref\hienv_asp.dll
+D:\C#\hienv_asp\bin\Debug\net6.0\Serilog.dll
+D:\C#\hienv_asp\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+D:\C#\hienv_asp\bin\Debug\net6.0\Serilog.Extensions.Logging.File.dll
+D:\C#\hienv_asp\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+D:\C#\hienv_asp\bin\Debug\net6.0\Serilog.Sinks.Async.dll
+D:\C#\hienv_asp\bin\Debug\net6.0\Serilog.Sinks.File.dll
+D:\C#\hienv_asp\bin\Debug\net6.0\Serilog.Sinks.RollingFile.dll
