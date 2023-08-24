@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using hienv_asp.Context;
+using hienv_asp.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +27,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseMiddlewareRequest();
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
@@ -43,7 +46,5 @@ app.UseEndpoints(endpoints =>
 
     endpoints.MapRazorPages();
 });
-
-
 
 app.Run();

@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\lib\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap.bundle.min.js"
+    },
+    {
       "Id": "D:\\C#\\hienv_asp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
@@ -535,6 +539,10 @@
     {
       "Id": "D:\\C#\\hienv_asp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\lib\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery.slim.min.js"
     },
     {
       "Id": "D:\\C#\\hienv_asp\\wwwroot\\lib\\jquery\\LICENSE.txt",
@@ -8487,6 +8495,10 @@
     {
       "Id": "D:\\C#\\hienv_asp\\wwwroot\\lib\\plugins\\uplot\\uPlot.min.css",
       "PackagePath": "staticwebassets\\lib\\plugins\\uplot\\uPlot.min.css"
+    },
+    {
+      "Id": "D:\\C#\\hienv_asp\\wwwroot\\lib\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.min.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.hienv_asp.props",

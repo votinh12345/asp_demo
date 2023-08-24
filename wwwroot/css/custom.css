@@ -112,3 +112,6 @@
     background-color: #fff;
     border-color: #dedede;
 }
+.table > :not(:last-child) > :last-child > * {
+    border-bottom:none
+}

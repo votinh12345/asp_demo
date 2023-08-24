@@ -636,17 +636,14 @@ namespace hienv_asp.Migrations
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("directory")
-                        .IsRequired()
                         .HasMaxLength(32)
                         .HasColumnType("nvarchar(32)");
 
                     b.Property<string>("filename")
-                        .IsRequired()
                         .HasMaxLength(64)
                         .HasColumnType("nvarchar(64)");
 
                     b.Property<string>("image")
-                        .IsRequired()
                         .HasMaxLength(64)
                         .HasColumnType("nvarchar(64)");
 
@@ -687,6 +684,332 @@ namespace hienv_asp.Migrations
                     b.HasKey("layout_id");
 
                     b.ToTable("oc_layout");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.LengthClass", b =>
+                {
+                    b.Property<int>("length_class_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("length_class_id"));
+
+                    b.Property<decimal>("value")
+                        .HasPrecision(15, 8)
+                        .HasColumnType("decimal(15,8)");
+
+                    b.HasKey("length_class_id");
+
+                    b.ToTable("oc_length_class");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.LengthClassDescription", b =>
+                {
+                    b.Property<int>("length_class_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("length_class_id"));
+
+                    b.Property<int>("language_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("title")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<string>("unit")
+                        .IsRequired()
+                        .HasMaxLength(4)
+                        .HasColumnType("nvarchar(4)");
+
+                    b.HasKey("length_class_id", "language_id");
+
+                    b.ToTable("oc_length_class_description");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.OrderStatus", b =>
+                {
+                    b.Property<int>("order_status_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("order_status_id"));
+
+                    b.Property<int>("language_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.HasKey("order_status_id", "language_id");
+
+                    b.ToTable("oc_order_status");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.ReturnAction", b =>
+                {
+                    b.Property<int>("return_action_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("return_action_id"));
+
+                    b.Property<int>("language_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.HasKey("return_action_id", "language_id");
+
+                    b.ToTable("oc_return_action");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.ReturnReason", b =>
+                {
+                    b.Property<int>("return_action_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("return_action_id"));
+
+                    b.Property<int>("language_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.HasKey("return_action_id", "language_id");
+
+                    b.ToTable("oc_return_reason");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.ReturnStatus", b =>
+                {
+                    b.Property<int>("return_status_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("return_status_id"));
+
+                    b.Property<int>("language_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.HasKey("return_status_id", "language_id");
+
+                    b.ToTable("oc_return_status");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.StockStatus", b =>
+                {
+                    b.Property<int>("stock_status_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("stock_status_id"));
+
+                    b.Property<int>("language_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.HasKey("stock_status_id", "language_id");
+
+                    b.ToTable("oc_stock_status");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.Store", b =>
+                {
+                    b.Property<int>("store_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("store_id"));
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<string>("ssl")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("url")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.HasKey("store_id");
+
+                    b.ToTable("oc_store");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.User", b =>
+                {
+                    b.Property<int>("user_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("user_id"));
+
+                    b.Property<string>("code")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<DateTime?>("date_added")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("firstname")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("ip")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<string>("lastname")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("password")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<short>("status")
+                        .HasColumnType("smallint");
+
+                    b.Property<int>("user_group_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("username")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.HasKey("user_id");
+
+                    b.ToTable("oc_user");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.UserGroup", b =>
+                {
+                    b.Property<int>("user_group_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("user_group_id"));
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
+
+                    b.Property<string>("permission")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("user_group_id");
+
+                    b.ToTable("oc_user_group");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.WeightClass", b =>
+                {
+                    b.Property<int>("weight_class_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("weight_class_id"));
+
+                    b.Property<decimal>("value")
+                        .HasPrecision(15, 8)
+                        .HasColumnType("decimal(15,8)");
+
+                    b.HasKey("weight_class_id");
+
+                    b.ToTable("oc_weight_class");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.WeightClassDescription", b =>
+                {
+                    b.Property<int>("weight_class_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("weight_class_id"));
+
+                    b.Property<int>("language_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("title")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("nvarchar(32)");
+
+                    b.Property<string>("unit")
+                        .IsRequired()
+                        .HasMaxLength(4)
+                        .HasColumnType("nvarchar(4)");
+
+                    b.HasKey("weight_class_id", "language_id");
+
+                    b.ToTable("oc_weight_class_description");
+                });
+
+            modelBuilder.Entity("hienv_asp.Models.ZoneToGeoZone", b =>
+                {
+                    b.Property<int>("zone_to_geo_zone_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("zone_to_geo_zone_id"));
+
+                    b.Property<int>("country_id")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("date_added")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("date_modified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("geo_zone_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("zone_id")
+                        .HasColumnType("int");
+
+                    b.HasKey("zone_to_geo_zone_id");
+
+                    b.ToTable("oc_zone_to_geo_zone");
                 });
 #pragma warning restore 612, 618
         }

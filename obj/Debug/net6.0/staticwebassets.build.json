@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Zj0wx9BLGWsHZVjSXR3fdxLImb+Lw0pcIdDM5CZgHBw=",
+  "Hash": "QmAV7FLKwka7HPsghIDp7c9fqPnUM/84IK0cDELzI5o=",
   "Source": "hienv_asp",
   "BasePath": "_content/hienv_asp",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\C#\\hienv_asp\\wwwroot\\lib\\bootstrap.bundle.min.js",
+      "SourceId": "hienv_asp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\hienv_asp\\wwwroot\\",
+      "BasePath": "_content/hienv_asp",
+      "RelativePath": "lib/bootstrap.bundle.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap.bundle.min.js"
     },
     {
       "Identity": "D:\\C#\\hienv_asp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -2310,6 +2327,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Identity": "D:\\C#\\hienv_asp\\wwwroot\\lib\\jquery.slim.min.js",
+      "SourceId": "hienv_asp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\hienv_asp\\wwwroot\\",
+      "BasePath": "_content/hienv_asp",
+      "RelativePath": "lib/jquery.slim.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery.slim.min.js"
     },
     {
       "Identity": "D:\\C#\\hienv_asp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
@@ -36106,6 +36140,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\plugins\\uplot\\uPlot.min.css"
+    },
+    {
+      "Identity": "D:\\C#\\hienv_asp\\wwwroot\\lib\\popper.min.js",
+      "SourceId": "hienv_asp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\hienv_asp\\wwwroot\\",
+      "BasePath": "_content/hienv_asp",
+      "RelativePath": "lib/popper.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\popper.min.js"
     }
   ]
 }

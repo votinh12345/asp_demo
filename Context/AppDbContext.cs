@@ -25,6 +25,20 @@ namespace hienv_asp.Context
         public DbSet<Country> Country { set; get; }
         public DbSet<Language> Language { set; get; }
         public DbSet<Currency> Currency { set; get; }
+        public DbSet<Store> Store { set; get; }
+        public DbSet<StockStatus> StockStatus { set; get; }
+        public DbSet<OrderStatus> OrderStatus { set; get; }
+        public DbSet<ReturnStatus> ReturnStatus { set; get; }
+        public DbSet<ReturnAction> ReturnAction { set; get; }
+        public DbSet<ReturnReason> ReturnReason { set; get; }
+        public DbSet<ZoneToGeoZone> ZoneToGeoZone { set; get; }
+        public DbSet<LengthClass> LengthClass { set; get; }
+        public DbSet<LengthClassDescription> LengthClassDescription { set; get; }
+        public DbSet<WeightClass> WeightClass { set; get; }
+        public DbSet<WeightClassDescription> WeightClassDescription { set; get; }
+        public DbSet<User> User { set; get; }
+        public DbSet<UserGroup> UserGroup { set; get; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -45,6 +59,27 @@ namespace hienv_asp.Context
 
             modelBuilder.Entity<BannerImageDescription>()
                  .HasKey(m => new { m.banner_image_id, m.language_id });
+
+            modelBuilder.Entity<StockStatus>()
+                 .HasKey(m => new { m.stock_status_id, m.language_id });
+
+            modelBuilder.Entity<OrderStatus>()
+                 .HasKey(m => new { m.order_status_id, m.language_id });
+
+            modelBuilder.Entity<ReturnStatus>()
+                 .HasKey(m => new { m.return_status_id, m.language_id });
+
+            modelBuilder.Entity<ReturnAction>()
+                 .HasKey(m => new { m.return_action_id, m.language_id });
+
+            modelBuilder.Entity<ReturnReason>()
+                 .HasKey(m => new { m.return_action_id, m.language_id });
+
+            modelBuilder.Entity<LengthClassDescription>()
+                 .HasKey(m => new { m.length_class_id, m.language_id });
+
+            modelBuilder.Entity<WeightClassDescription>()
+                 .HasKey(m => new { m.weight_class_id, m.language_id });
         }
     }
 }
