@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = hienv_asp
 build_property.RootNamespace = hienv_asp
-build_property.ProjectDir = D:\C#\hienv_asp\
+build_property.ProjectDir = E:\ASP\asp_demo\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\C#\hienv_asp
+build_property.MSBuildProjectDirectory = E:\ASP\asp_demo
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Category/Create.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Category/Edit.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Category/Index.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Country/Create.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Country/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291bnRyeVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Country/Edit.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Country/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291bnRyeVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Country/Index.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Country/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291bnRyeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Languages/Create.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Languages/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGFuZ3VhZ2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Languages/Edit.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Languages/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGFuZ3VhZ2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Languages/Index.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Languages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGFuZ3VhZ2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Areas/Admin/Views/Store/Index.cshtml]
+[E:/ASP/asp_demo/Areas/Admin/Views/Store/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3RvcmVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/Home/Index.cshtml]
+[E:/ASP/asp_demo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/Home/Privacy.cshtml]
+[E:/ASP/asp_demo/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/Shared/Error.cshtml]
+[E:/ASP/asp_demo/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/Shared/_Modals.cshtml]
+[E:/ASP/asp_demo/Views/Shared/_Modals.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Nb2RhbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/Shared/_NavPartialLeft.cshtml]
+[E:/ASP/asp_demo/Views/Shared/_NavPartialLeft.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZQYXJ0aWFsTGVmdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/Shared/_NavPartialTop.cshtml]
+[E:/ASP/asp_demo/Views/Shared/_NavPartialTop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZQYXJ0aWFsVG9wLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/ASP/asp_demo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/_ViewImports.cshtml]
+[E:/ASP/asp_demo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/_ViewStart.cshtml]
+[E:/ASP/asp_demo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/C\#/hienv_asp/Views/Shared/_Layout.cshtml]
+[E:/ASP/asp_demo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-roslixs87w

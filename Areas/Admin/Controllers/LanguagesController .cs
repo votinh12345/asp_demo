@@ -29,6 +29,8 @@ public class LanguagesController : Controller
 
     public IActionResult Index()
     {
+        var a = "dsadadasda";
+        _logger.LogDebug(a);
         var items = _context.Language.ToList();
         return View(items);
     }

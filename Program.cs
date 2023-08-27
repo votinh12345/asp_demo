@@ -3,15 +3,14 @@ using hienv_asp.Context;
 using hienv_asp.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Logging.AddLog4Net();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnect")));
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 var app = builder.Build();
-var loggerFactory = app.Services.GetService<ILoggerFactory>();
-loggerFactory.AddFile(builder.Configuration["Logging:LogFilePath"].ToString());
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

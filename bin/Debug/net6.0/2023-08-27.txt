@@ -1,0 +1,53 @@
+2023-08-27 23:09:27,669 [1] INFO  App  
+ Now listening on: https://localhost:7171 
+ 
+2023-08-27 23:09:27,677 [1] INFO  App  
+ Now listening on: http://localhost:5074 
+ 
+2023-08-27 23:09:27,680 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2023-08-27 23:09:27,680 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2023-08-27 23:09:27,681 [1] INFO  App  
+ Content root path: E:\ASP\asp_demo\ 
+ 
+2023-08-27 23:09:27,986 [.NET ThreadPool Worker] INFO  App  
+ Request GET / => 200 
+ 
+2023-08-27 23:09:36,570 [.NET ThreadPool Worker] INFO  App  
+ Request GET /Admin/Languages => 200 
+ 
+2023-08-27 23:09:37,811 [.NET ThreadPool Worker] INFO  App  
+ Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[language_id], [o].[code], [o].[directory], [o].[filename], [o].[image], [o].[locale], [o].[name], [o].[sort_order], [o].[status]
+FROM [oc_language] AS [o] 
+ 
+2023-08-27 23:10:47,289 [.NET ThreadPool Worker] INFO  App  
+ Request GET /Admin/Languages => 200 
+ 
+2023-08-27 23:10:47,297 [.NET ThreadPool Worker] INFO  App  
+ Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[language_id], [o].[code], [o].[directory], [o].[filename], [o].[image], [o].[locale], [o].[name], [o].[sort_order], [o].[status]
+FROM [oc_language] AS [o] 
+ 
+2023-08-27 23:10:59,522 [.NET ThreadPool Worker] INFO  App  
+ Request GET /Admin/Store => 200 
+ 
+2023-08-27 23:10:59,591 [.NET ThreadPool Worker] INFO  App  
+ Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[store_id], [o].[name], [o].[ssl], [o].[url]
+FROM [oc_store] AS [o] 
+ 
+2023-08-27 23:11:05,061 [.NET ThreadPool Worker] INFO  App  
+ Request GET /Admin/Languages => 200 
+ 
+2023-08-27 23:11:05,066 [.NET ThreadPool Worker] INFO  App  
+ Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[language_id], [o].[code], [o].[directory], [o].[filename], [o].[image], [o].[locale], [o].[name], [o].[sort_order], [o].[status]
+FROM [oc_language] AS [o] 
+ 
+2023-08-27 23:12:24,649 [8] INFO  App  
+ Application is shutting down... 
+ 
