@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using MVC_hiennv.Areas.Admin.Languages.Controllers;
 using System.Threading.Tasks;
 
 namespace hienv_asp.Middleware
@@ -10,10 +11,10 @@ namespace hienv_asp.Middleware
         private readonly RequestDelegate _next;
 
         private readonly ILogger _logger;
-        public MiddlewareRequest(RequestDelegate next, ILoggerFactory loggerFactory)
+        public MiddlewareRequest(RequestDelegate next, ILogger<MiddlewareRequest> logger)
         {
             _next = next;
-            _logger = loggerFactory.CreateLogger<MiddlewareRequest>();
+            _logger = logger;
         }
 
         public Task Invoke(HttpContext httpContext)

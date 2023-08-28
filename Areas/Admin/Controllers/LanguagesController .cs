@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using LanguageModel = hienv_asp.Models.Language;
 using static System.Net.Mime.MediaTypeNames;
 using System.IO;
+using Serilog;
 
 namespace MVC_hiennv.Areas.Admin.Languages.Controllers;
 [Area("Admin")]
@@ -29,8 +30,6 @@ public class LanguagesController : Controller
 
     public IActionResult Index()
     {
-        var a = "dsadadasda";
-        _logger.LogDebug(a);
         var items = _context.Language.ToList();
         return View(items);
     }
@@ -58,7 +57,6 @@ public class LanguagesController : Controller
                 sort_order = language.sort_order,
                 status = language.status
             };
-            _logger.LogInformation("Testing logging in Program.cs");
             try
             {
 

@@ -1,9 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using hienv_asp.Context;
 using hienv_asp.Middleware;
+using Serilog;
+
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Logging.AddLog4Net();
+var logger = new LoggerConfiguration().MinimumLevel.Debug()
+  .ReadFrom.Configuration(builder.Configuration)
+  .Enrich.FromLogContext()
+  .CreateLogger();
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

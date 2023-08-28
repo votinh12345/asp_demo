@@ -1,0 +1,722 @@
+2023-08-28 18:38:59.133 +09:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-08-28 18:38:59.176 +09:00  INF  User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-28 18:38:59.326 +09:00  DBG  Hosting starting
+2023-08-28 18:38:59.328 +09:00  DBG  Reading data from file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-4cd43452-f1d5-42bc-ac3e-a31e9a9cfddf.xml'.
+2023-08-28 18:38:59.335 +09:00  DBG  Found key {4cd43452-f1d5-42bc-ac3e-a31e9a9cfddf}.
+2023-08-28 18:38:59.342 +09:00  DBG  Considering key {4cd43452-f1d5-42bc-ac3e-a31e9a9cfddf} with expiration date 2023-09-07 03:00:29Z as default key.
+2023-08-28 18:38:59.343 +09:00  DBG  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-28 18:38:59.346 +09:00  DBG  Decrypting secret element using Windows DPAPI.
+2023-08-28 18:38:59.347 +09:00  DBG  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-08-28 18:38:59.351 +09:00  DBG  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2023-08-28 18:38:59.353 +09:00  DBG  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2023-08-28 18:38:59.355 +09:00  DBG  Using key {4cd43452-f1d5-42bc-ac3e-a31e9a9cfddf} as the default key.
+2023-08-28 18:38:59.355 +09:00  DBG  Key ring with default key {4cd43452-f1d5-42bc-ac3e-a31e9a9cfddf} was loaded during application startup.
+2023-08-28 18:38:59.392 +09:00  DBG  Using development certificate: CN=localhost (Thumbprint: 3CBB7585B06BC6D63B9E46584E126FD20DD0DC8D)
+2023-08-28 18:38:59.419 +09:00  INF  Now listening on: https://localhost:7171
+2023-08-28 18:38:59.419 +09:00  INF  Now listening on: http://localhost:5074
+2023-08-28 18:38:59.419 +09:00  DBG  Loaded hosting startup assembly hienv_asp
+2023-08-28 18:38:59.419 +09:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-08-28 18:38:59.419 +09:00  INF  Application started. Press Ctrl+C to shut down.
+2023-08-28 18:38:59.419 +09:00  INF  Hosting environment: Development
+2023-08-28 18:38:59.419 +09:00  INF  Content root path: D:\C#\asp_demo\
+2023-08-28 18:38:59.419 +09:00  DBG  Hosting started
+2023-08-28 18:39:03.910 +09:00  DBG  Connection id "0HMT7LAEUVNL8" accepted.
+2023-08-28 18:39:03.910 +09:00  DBG  Connection id "0HMT7LAEUVNL8" started.
+2023-08-28 18:39:03.938 +09:00  DBG  Connection id "0HMT7LAEUVNL8" received FIN.
+2023-08-28 18:39:03.938 +09:00  DBG  Connection id "0HMT7LAEUVNL9" accepted.
+2023-08-28 18:39:03.938 +09:00  DBG  Connection id "0HMT7LAEUVNL9" started.
+2023-08-28 18:39:03.939 +09:00  DBG  Connection id "0HMT7LAEUVNL9" received FIN.
+2023-08-28 18:39:03.940 +09:00  DBG  Connection id "0HMT7LAEUVNLA" accepted.
+2023-08-28 18:39:03.940 +09:00  DBG  Connection id "0HMT7LAEUVNLA" started.
+2023-08-28 18:39:03.942 +09:00  DBG  Failed to authenticate HTTPS connection.System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-08-28 18:39:03.942 +09:00  DBG  Failed to authenticate HTTPS connection.System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-08-28 18:39:03.950 +09:00  DBG  Connection 0HMT7LAEUVNLA established using the following protocol: "Tls12"
+2023-08-28 18:39:03.957 +09:00  DBG  Connection id "0HMT7LAEUVNL8" stopped.
+2023-08-28 18:39:03.957 +09:00  DBG  Connection id "0HMT7LAEUVNL9" stopped.
+2023-08-28 18:39:03.957 +09:00  DBG  Connection id "0HMT7LAEUVNL8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-28 18:39:03.957 +09:00  DBG  Connection id "0HMT7LAEUVNL9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-28 18:39:03.988 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/Admin/Languages - -
+2023-08-28 18:39:03.995 +09:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-08-28 18:39:03.996 +09:00  DBG  The request path /Admin/Languages does not match a supported file type
+2023-08-28 18:39:04.022 +09:00  DBG  1 candidate(s) found for the request path '/Admin/Languages'
+2023-08-28 18:39:04.026 +09:00  DBG  Endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.LanguagesController.Index (hienv_asp)' with route pattern '{area:exists}/{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Admin/Languages'
+2023-08-28 18:39:04.026 +09:00  DBG  Request matched endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.LanguagesController.Index (hienv_asp)'
+2023-08-28 18:39:04.028 +09:00  INF  Request GET /Admin/Languages => 200
+2023-08-28 18:39:04.028 +09:00  INF  Executing endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.LanguagesController.Index (hienv_asp)'
+2023-08-28 18:39:04.049 +09:00  INF  Route matched with {area = "Admin", action = "Index", controller = "Languages"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_hiennv.Areas.Admin.Languages.Controllers.LanguagesController (hienv_asp).
+2023-08-28 18:39:04.050 +09:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-08-28 18:39:04.050 +09:00  DBG  Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-08-28 18:39:04.050 +09:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2023-08-28 18:39:04.050 +09:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-08-28 18:39:04.050 +09:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-08-28 18:39:04.051 +09:00  DBG  Executing controller factory for controller MVC_hiennv.Areas.Admin.Languages.Controllers.LanguagesController (hienv_asp)
+2023-08-28 18:39:04.137 +09:00  DBG  An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-08-28 18:39:04.164 +09:00  DBG  Executed controller factory for controller MVC_hiennv.Areas.Admin.Languages.Controllers.LanguagesController (hienv_asp)
+2023-08-28 18:39:04.165 +09:00  DBG  Debug message
+2023-08-28 18:39:04.763 +09:00  DBG  Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2023-08-28 18:39:04.804 +09:00  DBG  Compiling query expression: 
+'DbSet<Language>()'
+2023-08-28 18:39:04.941 +09:00  DBG  Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Language>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Language.language_id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Language.code (string) Required MaxLength(5), 1], [Property: Language.directory (string) MaxLength(32), 2], [Property: Language.filename (string) MaxLength(64), 3], [Property: Language.image (string) MaxLength(64), 4], [Property: Language.locale (string) Required MaxLength(255), 5], [Property: Language.name (string) Required MaxLength(32), 6], [Property: Language.sort_order (short) Required, 7], [Property: Language.status (short) Required, 8] }
+        SELECT o.language_id, o.code, o.directory, o.filename, o.image, o.locale, o.name, o.sort_order, o.status
+        FROM oc_language AS o), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Language>, 
+    hienv_asp.Context.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-08-28 18:39:04.962 +09:00  DBG  Creating DbCommand for 'ExecuteReader'.
+2023-08-28 18:39:04.963 +09:00  DBG  Creating DbConnection.
+2023-08-28 18:39:04.981 +09:00  DBG  Created DbConnection. (15ms).
+2023-08-28 18:39:04.988 +09:00  DBG  Created DbCommand for 'ExecuteReader' (22ms).
+2023-08-28 18:39:04.989 +09:00  DBG  Initialized DbCommand for 'ExecuteReader' (27ms).
+2023-08-28 18:39:04.991 +09:00  DBG  Opening connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:05.155 +09:00  DBG  Opened connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:05.162 +09:00  DBG  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[language_id], [o].[code], [o].[directory], [o].[filename], [o].[image], [o].[locale], [o].[name], [o].[sort_order], [o].[status]
+FROM [oc_language] AS [o]
+2023-08-28 18:39:05.183 +09:00  INF  Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[language_id], [o].[code], [o].[directory], [o].[filename], [o].[image], [o].[locale], [o].[name], [o].[sort_order], [o].[status]
+FROM [oc_language] AS [o]
+2023-08-28 18:39:05.211 +09:00  DBG  Context 'ApplicationDbContext' started tracking 'Language' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-08-28 18:39:05.283 +09:00  DBG  Closing data reader to 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:05.291 +09:00  DBG  A data reader for 'open_cart' on server '6925-HIENNV-DT2\HIENNV' is being disposed after spending 100ms reading results.
+2023-08-28 18:39:05.292 +09:00  DBG  Closing connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:05.296 +09:00  DBG  Closed connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV' (3ms).
+2023-08-28 18:39:05.300 +09:00  DBG  View lookup cache miss for view 'Index' in controller 'Languages'.
+2023-08-28 18:39:05.302 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Category/Create.cshtml'.
+2023-08-28 18:39:05.302 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Category/Edit.cshtml'.
+2023-08-28 18:39:05.302 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Category/Index.cshtml'.
+2023-08-28 18:39:05.302 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Country/Create.cshtml'.
+2023-08-28 18:39:05.302 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Country/Edit.cshtml'.
+2023-08-28 18:39:05.302 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Country/Index.cshtml'.
+2023-08-28 18:39:05.302 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Languages/Create.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Languages/Edit.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Languages/Index.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Areas/Admin/Views/Store/Index.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/Shared/_Modals.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/Shared/_NavPartialLeft.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/Shared/_NavPartialTop.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'.
+2023-08-28 18:39:05.303 +09:00  DBG  Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'.
+2023-08-28 18:39:06.260 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Areas\Admin\Views\Languages\Index.cshtml' started.
+2023-08-28 18:39:08.148 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Areas\Admin\Views\Languages\Index.cshtml' completed in 1884.0887ms.
+2023-08-28 18:39:08.151 +09:00  INF  Executing ViewResult, running view Index.
+2023-08-28 18:39:08.151 +09:00  DBG  The view path '/Areas/Admin/Views/Languages/Index.cshtml' was found in 2851.7177ms.
+2023-08-28 18:39:08.180 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:08.184 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages/Create and 
+2023-08-28 18:39:08.185 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages/Create
+2023-08-28 18:39:08.187 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:08.187 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages/Edit/1 and 
+2023-08-28 18:39:08.187 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages/Edit/1
+2023-08-28 18:39:08.188 +09:00  DBG  View lookup cache miss for view '_Layout' in controller 'Languages'.
+2023-08-28 18:39:08.264 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Views\Shared\_Layout.cshtml' started.
+2023-08-28 18:39:08.422 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Views\Shared\_Layout.cshtml' completed in 158.0632ms.
+2023-08-28 18:39:08.444 +09:00  DBG  View lookup cache miss for view '_NavPartialTop' in controller 'Languages'.
+2023-08-28 18:39:08.506 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Views\Shared\_NavPartialTop.cshtml' started.
+2023-08-28 18:39:08.544 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Views\Shared\_NavPartialTop.cshtml' completed in 37.9277ms.
+2023-08-28 18:39:08.549 +09:00  DBG  View lookup cache miss for view '_NavPartialLeft' in controller 'Languages'.
+2023-08-28 18:39:08.621 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Views\Shared\_NavPartialLeft.cshtml' started.
+2023-08-28 18:39:08.667 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Views\Shared\_NavPartialLeft.cshtml' completed in 46.3778ms.
+2023-08-28 18:39:08.672 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:08.672 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Category and 
+2023-08-28 18:39:08.672 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Category
+2023-08-28 18:39:08.673 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:08.673 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:39:08.673 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:39:08.673 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:08.673 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Store and 
+2023-08-28 18:39:08.673 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Store
+2023-08-28 18:39:08.673 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:08.673 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:39:08.673 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:39:08.674 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:08.674 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Country and 
+2023-08-28 18:39:08.674 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Country
+2023-08-28 18:39:08.674 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:08.674 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:39:08.674 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:39:08.675 +09:00  DBG  View lookup cache miss for view '_Modals' in controller 'Languages'.
+2023-08-28 18:39:08.727 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Views\Shared\_Modals.cshtml' started.
+2023-08-28 18:39:08.759 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Views\Shared\_Modals.cshtml' completed in 32.4277ms.
+2023-08-28 18:39:08.767 +09:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-08-28 18:39:08.773 +09:00  INF  Executed ViewResult - view Index executed in 3473.9269ms.
+2023-08-28 18:39:08.774 +09:00  INF  Executed action MVC_hiennv.Areas.Admin.Languages.Controllers.LanguagesController.Index (hienv_asp) in 4723.5516ms
+2023-08-28 18:39:08.774 +09:00  INF  Executed endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.LanguagesController.Index (hienv_asp)'
+2023-08-28 18:39:08.774 +09:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-08-28 18:39:08.779 +09:00  DBG  'ApplicationDbContext' disposed.
+2023-08-28 18:39:08.788 +09:00  DBG  Disposing connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:08.788 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/fontawesome-free/css/all.min.css - -
+2023-08-28 18:39:08.789 +09:00  DBG  Disposed connection to database '' on server '' (1ms).
+2023-08-28 18:39:08.790 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/Admin/Languages - - - 200 - text/html;+charset=utf-8 4804.9070ms
+2023-08-28 18:39:08.791 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css - -
+2023-08-28 18:39:08.791 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/icheck-bootstrap/icheck-bootstrap.min.css - -
+2023-08-28 18:39:08.793 +09:00  INF  Sending file. Request path: '/lib/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\tempusdominus-bootstrap-4\css\tempusdominus-bootstrap-4.min.css'
+2023-08-28 18:39:08.794 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css - - - 200 11967 text/css 2.6574ms
+2023-08-28 18:39:08.797 +09:00  INF  Sending file. Request path: '/lib/plugins/icheck-bootstrap/icheck-bootstrap.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\icheck-bootstrap\icheck-bootstrap.min.css'
+2023-08-28 18:39:08.797 +09:00  INF  Sending file. Request path: '/lib/plugins/fontawesome-free/css/all.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\fontawesome-free\css\all.min.css'
+2023-08-28 18:39:08.799 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/icheck-bootstrap/icheck-bootstrap.min.css - - - 200 12505 text/css 7.6514ms
+2023-08-28 18:39:08.799 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/fontawesome-free/css/all.min.css - - - 200 59305 text/css 10.8304ms
+2023-08-28 18:39:08.799 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/jqvmap/jqvmap.min.css - -
+2023-08-28 18:39:08.800 +09:00  INF  Sending file. Request path: '/lib/plugins/jqvmap/jqvmap.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\jqvmap\jqvmap.min.css'
+2023-08-28 18:39:08.800 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css - -
+2023-08-28 18:39:08.800 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/jqvmap/jqvmap.min.css - - - 200 613 text/css 1.2055ms
+2023-08-28 18:39:08.803 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/overlayScrollbars/css/OverlayScrollbars.min.css - -
+2023-08-28 18:39:08.803 +09:00  INF  Sending file. Request path: '/lib/plugins/overlayScrollbars/css/OverlayScrollbars.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\overlayScrollbars\css\OverlayScrollbars.min.css'
+2023-08-28 18:39:08.804 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/overlayScrollbars/css/OverlayScrollbars.min.css - - - 200 20020 text/css 1.0686ms
+2023-08-28 18:39:08.807 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/daterangepicker/daterangepicker.css - -
+2023-08-28 18:39:08.808 +09:00  INF  Sending file. Request path: '/lib/plugins/daterangepicker/daterangepicker.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\daterangepicker\daterangepicker.css'
+2023-08-28 18:39:08.808 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/daterangepicker/daterangepicker.css - - - 200 8069 text/css 0.9352ms
+2023-08-28 18:39:08.810 +09:00  INF  Sending file. Request path: '/lib/dist/css/adminlte.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\css\adminlte.min.css'
+2023-08-28 18:39:08.810 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css - - - 200 1396747 text/css 9.3072ms
+2023-08-28 18:39:08.810 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/summernote/summernote-bs4.min.css - -
+2023-08-28 18:39:08.810 +09:00  INF  Sending file. Request path: '/lib/plugins/summernote/summernote-bs4.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\summernote\summernote-bs4.min.css'
+2023-08-28 18:39:08.811 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/summernote/summernote-bs4.min.css - - - 200 19513 text/css 0.8102ms
+2023-08-28 18:39:08.812 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-08-28 18:39:08.813 +09:00  INF  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2023-08-28 18:39:08.813 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 1.5596ms
+2023-08-28 18:39:08.813 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2023-08-28 18:39:08.814 +09:00  INF  Sending file. Request path: '/css/site.css'. Physical path: 'D:\C#\asp_demo\wwwroot\css\site.css'
+2023-08-28 18:39:08.814 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 0.7642ms
+2023-08-28 18:39:08.833 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - -
+2023-08-28 18:39:08.833 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/css/custom.css?v=e9afqS8PlaoSmevHMp7-wxMOrom9f0QG1J_CosEsNL0 - -
+2023-08-28 18:39:08.834 +09:00  INF  Sending file. Request path: '/css/custom.css'. Physical path: 'D:\C#\asp_demo\wwwroot\css\custom.css'
+2023-08-28 18:39:08.834 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/css/custom.css?v=e9afqS8PlaoSmevHMp7-wxMOrom9f0QG1J_CosEsNL0 - - - 200 2524 text/css 0.7750ms
+2023-08-28 18:39:08.835 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.5026ms
+2023-08-28 18:39:08.908 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/favicon.ico - -
+2023-08-28 18:39:08.908 +09:00  INF  Sending file. Request path: '/favicon.ico'. Physical path: 'D:\C#\asp_demo\wwwroot\favicon.ico'
+2023-08-28 18:39:08.908 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/favicon.ico - - - 200 5430 image/x-icon 0.7347ms
+2023-08-28 18:39:35.732 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/Admin/Store - -
+2023-08-28 18:39:35.733 +09:00  DBG  The request path /Admin/Store does not match a supported file type
+2023-08-28 18:39:35.734 +09:00  DBG  1 candidate(s) found for the request path '/Admin/Store'
+2023-08-28 18:39:35.734 +09:00  DBG  Endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)' with route pattern '{area:exists}/{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Admin/Store'
+2023-08-28 18:39:35.734 +09:00  DBG  Request matched endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)'
+2023-08-28 18:39:35.734 +09:00  INF  Request GET /Admin/Store => 200
+2023-08-28 18:39:35.735 +09:00  INF  Executing endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)'
+2023-08-28 18:39:35.736 +09:00  INF  Route matched with {area = "Admin", action = "Index", controller = "Store"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController (hienv_asp).
+2023-08-28 18:39:35.736 +09:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-08-28 18:39:35.736 +09:00  DBG  Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-08-28 18:39:35.736 +09:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2023-08-28 18:39:35.736 +09:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-08-28 18:39:35.736 +09:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-08-28 18:39:35.736 +09:00  DBG  Executing controller factory for controller MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController (hienv_asp)
+2023-08-28 18:39:35.737 +09:00  DBG  Executed controller factory for controller MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController (hienv_asp)
+2023-08-28 18:39:35.740 +09:00  DBG  Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2023-08-28 18:39:35.740 +09:00  DBG  Compiling query expression: 
+'DbSet<Store>()'
+2023-08-28 18:39:35.743 +09:00  DBG  Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Store>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Store.store_id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Store.name (string) Required MaxLength(64), 1], [Property: Store.ssl (string) Required MaxLength(255), 2], [Property: Store.url (string) Required MaxLength(255), 3] }
+        SELECT o.store_id, o.name, o.ssl, o.url
+        FROM oc_store AS o), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Store>, 
+    hienv_asp.Context.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-08-28 18:39:35.744 +09:00  DBG  Creating DbCommand for 'ExecuteReader'.
+2023-08-28 18:39:35.744 +09:00  DBG  Creating DbConnection.
+2023-08-28 18:39:35.744 +09:00  DBG  Created DbConnection. (0ms).
+2023-08-28 18:39:35.744 +09:00  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-28 18:39:35.744 +09:00  DBG  Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-08-28 18:39:35.744 +09:00  DBG  Opening connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:35.745 +09:00  DBG  Opened connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:35.745 +09:00  DBG  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[store_id], [o].[name], [o].[ssl], [o].[url]
+FROM [oc_store] AS [o]
+2023-08-28 18:39:35.762 +09:00  INF  Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[store_id], [o].[name], [o].[ssl], [o].[url]
+FROM [oc_store] AS [o]
+2023-08-28 18:39:35.763 +09:00  DBG  Closing data reader to 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:35.763 +09:00  DBG  A data reader for 'open_cart' on server '6925-HIENNV-DT2\HIENNV' is being disposed after spending 0ms reading results.
+2023-08-28 18:39:35.763 +09:00  DBG  Closing connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:35.763 +09:00  DBG  Closed connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV' (0ms).
+2023-08-28 18:39:35.763 +09:00  DBG  View lookup cache miss for view 'Index' in controller 'Store'.
+2023-08-28 18:39:35.822 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Areas\Admin\Views\Store\Index.cshtml' started.
+2023-08-28 18:39:35.880 +09:00  DBG  Compilation of the generated code for the Razor file at 'D:\C#\asp_demo\Areas\Admin\Views\Store\Index.cshtml' completed in 57.8221ms.
+2023-08-28 18:39:35.880 +09:00  INF  Executing ViewResult, running view Index.
+2023-08-28 18:39:35.881 +09:00  DBG  The view path '/Areas/Admin/Views/Store/Index.cshtml' was found in 117.4716ms.
+2023-08-28 18:39:35.884 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:35.884 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Store/Create and 
+2023-08-28 18:39:35.884 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Store/Create
+2023-08-28 18:39:35.885 +09:00  DBG  View lookup cache miss for view '_Layout' in controller 'Store'.
+2023-08-28 18:39:35.886 +09:00  DBG  View lookup cache miss for view '_NavPartialTop' in controller 'Store'.
+2023-08-28 18:39:35.887 +09:00  DBG  View lookup cache miss for view '_NavPartialLeft' in controller 'Store'.
+2023-08-28 18:39:35.887 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:35.887 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Category and 
+2023-08-28 18:39:35.887 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Category
+2023-08-28 18:39:35.887 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:35.887 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:39:35.887 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:39:35.887 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:35.887 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Store and 
+2023-08-28 18:39:35.887 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Store
+2023-08-28 18:39:35.887 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:35.887 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:39:35.887 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:39:35.888 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:35.888 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Country and 
+2023-08-28 18:39:35.888 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Country
+2023-08-28 18:39:35.888 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:39:35.888 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:39:35.888 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:39:35.888 +09:00  DBG  View lookup cache miss for view '_Modals' in controller 'Store'.
+2023-08-28 18:39:35.889 +09:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-08-28 18:39:35.890 +09:00  INF  Executed ViewResult - view Index executed in 126.484ms.
+2023-08-28 18:39:35.890 +09:00  INF  Executed action MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp) in 153.4319ms
+2023-08-28 18:39:35.890 +09:00  INF  Executed endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)'
+2023-08-28 18:39:35.890 +09:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-08-28 18:39:35.890 +09:00  DBG  'ApplicationDbContext' disposed.
+2023-08-28 18:39:35.890 +09:00  DBG  Disposing connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:39:35.890 +09:00  DBG  Disposed connection to database '' on server '' (0ms).
+2023-08-28 18:39:35.890 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/Admin/Store - - - 200 - text/html;+charset=utf-8 157.8548ms
+2023-08-28 18:39:35.901 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - -
+2023-08-28 18:39:35.901 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.1822ms
+2023-08-28 18:41:47.696 +09:00  DBG  Connection id "0HMT7LAEUVNLA" is closing.
+2023-08-28 18:41:47.696 +09:00  DBG  Connection id "0HMT7LAEUVNLA" is closed. The last processed stream ID was 31.
+2023-08-28 18:41:47.696 +09:00  DBG  Connection id "0HMT7LAEUVNLA" received FIN.
+2023-08-28 18:41:47.697 +09:00  DBG  Connection id "0HMT7LAEUVNLA" sending FIN because: "The client closed the connection."
+2023-08-28 18:41:47.698 +09:00  DBG  Connection id "0HMT7LAEUVNLA" stopped.
+2023-08-28 18:41:48.137 +09:00  DBG  Connection id "0HMT7LAEUVNLB" accepted.
+2023-08-28 18:41:48.137 +09:00  DBG  Connection id "0HMT7LAEUVNLB" started.
+2023-08-28 18:41:48.138 +09:00  DBG  Connection id "0HMT7LAEUVNLC" accepted.
+2023-08-28 18:41:48.138 +09:00  DBG  Connection id "0HMT7LAEUVNLC" started.
+2023-08-28 18:41:48.139 +09:00  DBG  Failed to authenticate HTTPS connection.System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-08-28 18:41:48.139 +09:00  DBG  Connection id "0HMT7LAEUVNLD" accepted.
+2023-08-28 18:41:48.139 +09:00  DBG  Connection id "0HMT7LAEUVNLB" received FIN.
+2023-08-28 18:41:48.139 +09:00  DBG  Connection id "0HMT7LAEUVNLE" accepted.
+2023-08-28 18:41:48.139 +09:00  DBG  Connection id "0HMT7LAEUVNLB" stopped.
+2023-08-28 18:41:48.140 +09:00  DBG  Connection id "0HMT7LAEUVNLE" started.
+2023-08-28 18:41:48.140 +09:00  DBG  Connection id "0HMT7LAEUVNLF" accepted.
+2023-08-28 18:41:48.140 +09:00  DBG  Connection id "0HMT7LAEUVNLD" started.
+2023-08-28 18:41:48.140 +09:00  DBG  Connection id "0HMT7LAEUVNLF" started.
+2023-08-28 18:41:48.140 +09:00  DBG  Connection id "0HMT7LAEUVNLC" received FIN.
+2023-08-28 18:41:48.140 +09:00  DBG  Failed to authenticate HTTPS connection.System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-08-28 18:41:48.141 +09:00  DBG  Connection id "0HMT7LAEUVNLC" stopped.
+2023-08-28 18:41:48.141 +09:00  DBG  Connection id "0HMT7LAEUVNLC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-28 18:41:48.142 +09:00  DBG  Connection id "0HMT7LAEUVNLB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-28 18:41:48.143 +09:00  DBG  Connection id "0HMT7LAEUVNLD" received FIN.
+2023-08-28 18:41:48.143 +09:00  DBG  Failed to authenticate HTTPS connection.System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-08-28 18:41:48.143 +09:00  DBG  Failed to authenticate HTTPS connection.System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-08-28 18:41:48.143 +09:00  DBG  Connection id "0HMT7LAEUVNLD" stopped.
+2023-08-28 18:41:48.143 +09:00  DBG  Connection id "0HMT7LAEUVNLD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-28 18:41:48.143 +09:00  DBG  Connection id "0HMT7LAEUVNLE" stopped.
+2023-08-28 18:41:48.144 +09:00  DBG  Connection id "0HMT7LAEUVNLE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-28 18:41:48.146 +09:00  DBG  Connection 0HMT7LAEUVNLF established using the following protocol: "Tls12"
+2023-08-28 18:41:48.147 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/bootstrap.bundle.min.js.map - -
+2023-08-28 18:41:48.147 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js.map - -
+2023-08-28 18:41:48.147 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/popper.min.js.map - -
+2023-08-28 18:41:48.147 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/moment/moment.min.js.map - -
+2023-08-28 18:41:48.148 +09:00  DBG  The request path /lib/popper.min.js.map does not match an existing file
+2023-08-28 18:41:48.148 +09:00  DBG  The request path /lib/bootstrap.bundle.min.js.map does not match an existing file
+2023-08-28 18:41:48.148 +09:00  DBG  No candidates found for the request path '/lib/bootstrap.bundle.min.js.map'
+2023-08-28 18:41:48.148 +09:00  DBG  No candidates found for the request path '/lib/popper.min.js.map'
+2023-08-28 18:41:48.148 +09:00  DBG  Request did not match any endpoints
+2023-08-28 18:41:48.148 +09:00  DBG  Request did not match any endpoints
+2023-08-28 18:41:48.148 +09:00  INF  Request GET /lib/bootstrap.bundle.min.js.map => 200
+2023-08-28 18:41:48.148 +09:00  INF  Request GET /lib/popper.min.js.map => 200
+2023-08-28 18:41:48.149 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/bootstrap.bundle.min.js.map - - - 404 0 - 1.4864ms
+2023-08-28 18:41:48.149 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/popper.min.js.map - - - 404 0 - 1.4858ms
+2023-08-28 18:41:48.184 +09:00  INF  Sending file. Request path: '/lib/plugins/moment/moment.min.js.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\moment\moment.min.js.map'
+2023-08-28 18:41:48.184 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/moment/moment.min.js.map - - - 200 86532 text/plain 36.7551ms
+2023-08-28 18:41:48.184 +09:00  INF  Sending file. Request path: '/lib/dist/js/adminlte.js.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\js\adminlte.js.map'
+2023-08-28 18:41:48.185 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js.map - - - 200 179858 text/plain 37.5633ms
+2023-08-28 18:41:48.193 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css.map - -
+2023-08-28 18:41:48.193 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2023-08-28 18:41:48.237 +09:00  INF  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2023-08-28 18:41:48.238 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 449111 text/plain 44.2147ms
+2023-08-28 18:41:48.359 +09:00  INF  Sending file. Request path: '/lib/dist/css/adminlte.min.css.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\css\adminlte.min.css.map'
+2023-08-28 18:41:48.359 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css.map - - - 200 3846965 text/plain 166.3185ms
+2023-08-28 18:43:59.964 +09:00  DBG  Connection id "0HMT7LAEUVNLF" is closing.
+2023-08-28 18:43:59.964 +09:00  DBG  Connection id "0HMT7LAEUVNLF" is closed. The last processed stream ID was 11.
+2023-08-28 18:43:59.967 +09:00  DBG  Connection id "0HMT7LAEUVNLF" received FIN.
+2023-08-28 18:43:59.967 +09:00  DBG  Connection id "0HMT7LAEUVNLF" sending FIN because: "The client closed the connection."
+2023-08-28 18:43:59.969 +09:00  DBG  Connection id "0HMT7LAEUVNLF" stopped.
+2023-08-28 18:50:00.351 +09:00  DBG  Connection id "0HMT7LAEUVNLG" accepted.
+2023-08-28 18:50:00.352 +09:00  DBG  Connection id "0HMT7LAEUVNLG" started.
+2023-08-28 18:50:00.353 +09:00  DBG  Connection id "0HMT7LAEUVNLG" received FIN.
+2023-08-28 18:50:00.353 +09:00  DBG  Failed to authenticate HTTPS connection.System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-08-28 18:50:00.354 +09:00  DBG  Connection id "0HMT7LAEUVNLH" accepted.
+2023-08-28 18:50:00.354 +09:00  DBG  Connection id "0HMT7LAEUVNLH" started.
+2023-08-28 18:50:00.354 +09:00  DBG  Connection id "0HMT7LAEUVNLG" stopped.
+2023-08-28 18:50:00.354 +09:00  DBG  Connection id "0HMT7LAEUVNLG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-28 18:50:00.357 +09:00  DBG  Connection id "0HMT7LAEUVNLH" received FIN.
+2023-08-28 18:50:00.357 +09:00  DBG  Failed to authenticate HTTPS connection.System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> System.ComponentModel.Win32Exception (0x80090327): An unknown error occurred while processing the certificate.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-08-28 18:50:00.357 +09:00  DBG  Connection id "0HMT7LAEUVNLH" stopped.
+2023-08-28 18:50:00.357 +09:00  DBG  Connection id "0HMT7LAEUVNLH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-08-28 18:50:00.358 +09:00  DBG  Connection id "0HMT7LAEUVNLI" accepted.
+2023-08-28 18:50:00.358 +09:00  DBG  Connection id "0HMT7LAEUVNLI" started.
+2023-08-28 18:50:00.361 +09:00  DBG  Connection 0HMT7LAEUVNLI established using the following protocol: "Tls12"
+2023-08-28 18:50:00.361 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/Admin/Store - -
+2023-08-28 18:50:00.362 +09:00  DBG  The request path /Admin/Store does not match a supported file type
+2023-08-28 18:50:00.362 +09:00  DBG  1 candidate(s) found for the request path '/Admin/Store'
+2023-08-28 18:50:00.362 +09:00  DBG  Endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)' with route pattern '{area:exists}/{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Admin/Store'
+2023-08-28 18:50:00.362 +09:00  DBG  Request matched endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)'
+2023-08-28 18:50:00.362 +09:00  INF  Request GET /Admin/Store => 200
+2023-08-28 18:50:00.362 +09:00  INF  Executing endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)'
+2023-08-28 18:50:00.363 +09:00  INF  Route matched with {area = "Admin", action = "Index", controller = "Store"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController (hienv_asp).
+2023-08-28 18:50:00.363 +09:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-08-28 18:50:00.363 +09:00  DBG  Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-08-28 18:50:00.363 +09:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2023-08-28 18:50:00.363 +09:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-08-28 18:50:00.363 +09:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-08-28 18:50:00.363 +09:00  DBG  Executing controller factory for controller MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController (hienv_asp)
+2023-08-28 18:50:00.364 +09:00  DBG  Executed controller factory for controller MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController (hienv_asp)
+2023-08-28 18:50:00.410 +09:00  DBG  Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2023-08-28 18:50:00.411 +09:00  DBG  Creating DbCommand for 'ExecuteReader'.
+2023-08-28 18:50:00.411 +09:00  DBG  Creating DbConnection.
+2023-08-28 18:50:00.412 +09:00  DBG  Created DbConnection. (0ms).
+2023-08-28 18:50:00.412 +09:00  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-28 18:50:00.412 +09:00  DBG  Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-08-28 18:50:00.412 +09:00  DBG  Opening connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:00.414 +09:00  DBG  Opened connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:00.415 +09:00  DBG  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[store_id], [o].[name], [o].[ssl], [o].[url]
+FROM [oc_store] AS [o]
+2023-08-28 18:50:00.447 +09:00  INF  Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[store_id], [o].[name], [o].[ssl], [o].[url]
+FROM [oc_store] AS [o]
+2023-08-28 18:50:00.447 +09:00  DBG  Closing data reader to 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:00.447 +09:00  DBG  A data reader for 'open_cart' on server '6925-HIENNV-DT2\HIENNV' is being disposed after spending 0ms reading results.
+2023-08-28 18:50:00.447 +09:00  DBG  Closing connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:00.447 +09:00  DBG  Closed connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV' (0ms).
+2023-08-28 18:50:00.448 +09:00  DBG  View lookup cache miss for view 'Index' in controller 'Store'.
+2023-08-28 18:50:00.448 +09:00  INF  Executing ViewResult, running view Index.
+2023-08-28 18:50:00.448 +09:00  DBG  The view path '/Areas/Admin/Views/Store/Index.cshtml' was found in 0.4856ms.
+2023-08-28 18:50:00.449 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:00.449 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Store/Create and 
+2023-08-28 18:50:00.449 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Store/Create
+2023-08-28 18:50:00.449 +09:00  DBG  View lookup cache miss for view '_Layout' in controller 'Store'.
+2023-08-28 18:50:00.450 +09:00  DBG  View lookup cache miss for view '_NavPartialTop' in controller 'Store'.
+2023-08-28 18:50:00.451 +09:00  DBG  View lookup cache miss for view '_NavPartialLeft' in controller 'Store'.
+2023-08-28 18:50:00.452 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:00.452 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Category and 
+2023-08-28 18:50:00.452 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Category
+2023-08-28 18:50:00.452 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:00.452 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:50:00.452 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:50:00.452 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:00.452 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Store and 
+2023-08-28 18:50:00.452 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Store
+2023-08-28 18:50:00.452 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:00.452 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:50:00.452 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:50:00.452 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:00.452 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Country and 
+2023-08-28 18:50:00.452 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Country
+2023-08-28 18:50:00.452 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:00.452 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:50:00.452 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:50:00.452 +09:00  DBG  View lookup cache miss for view '_Modals' in controller 'Store'.
+2023-08-28 18:50:00.453 +09:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-08-28 18:50:00.453 +09:00  INF  Executed ViewResult - view Index executed in 5.7893ms.
+2023-08-28 18:50:00.453 +09:00  INF  Executed action MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp) in 90.292ms
+2023-08-28 18:50:00.453 +09:00  INF  Executed endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)'
+2023-08-28 18:50:00.453 +09:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-08-28 18:50:00.454 +09:00  DBG  'ApplicationDbContext' disposed.
+2023-08-28 18:50:00.454 +09:00  DBG  Disposing connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:00.454 +09:00  DBG  Disposed connection to database '' on server '' (0ms).
+2023-08-28 18:50:00.454 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/Admin/Store - - - 200 - text/html;+charset=utf-8 92.3284ms
+2023-08-28 18:50:00.468 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/fontawesome-free/css/all.min.css - -
+2023-08-28 18:50:00.469 +09:00  INF  Sending file. Request path: '/lib/plugins/fontawesome-free/css/all.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\fontawesome-free\css\all.min.css'
+2023-08-28 18:50:00.469 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/fontawesome-free/css/all.min.css - - - 200 59305 text/css 1.1075ms
+2023-08-28 18:50:00.470 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css - -
+2023-08-28 18:50:00.471 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/icheck-bootstrap/icheck-bootstrap.min.css - -
+2023-08-28 18:50:00.471 +09:00  INF  Sending file. Request path: '/lib/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\tempusdominus-bootstrap-4\css\tempusdominus-bootstrap-4.min.css'
+2023-08-28 18:50:00.471 +09:00  INF  Sending file. Request path: '/lib/plugins/icheck-bootstrap/icheck-bootstrap.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\icheck-bootstrap\icheck-bootstrap.min.css'
+2023-08-28 18:50:00.471 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/icheck-bootstrap/icheck-bootstrap.min.css - - - 200 12505 text/css 0.5757ms
+2023-08-28 18:50:00.471 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css - - - 200 11967 text/css 0.9523ms
+2023-08-28 18:50:00.474 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/jqvmap/jqvmap.min.css - -
+2023-08-28 18:50:00.475 +09:00  INF  Sending file. Request path: '/lib/plugins/jqvmap/jqvmap.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\jqvmap\jqvmap.min.css'
+2023-08-28 18:50:00.475 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/jqvmap/jqvmap.min.css - - - 200 613 text/css 0.6643ms
+2023-08-28 18:50:00.477 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css - -
+2023-08-28 18:50:00.477 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/overlayScrollbars/css/OverlayScrollbars.min.css - -
+2023-08-28 18:50:00.478 +09:00  INF  Sending file. Request path: '/lib/plugins/overlayScrollbars/css/OverlayScrollbars.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\overlayScrollbars\css\OverlayScrollbars.min.css'
+2023-08-28 18:50:00.478 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/overlayScrollbars/css/OverlayScrollbars.min.css - - - 200 20020 text/css 0.8899ms
+2023-08-28 18:50:00.479 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/daterangepicker/daterangepicker.css - -
+2023-08-28 18:50:00.480 +09:00  INF  Sending file. Request path: '/lib/plugins/daterangepicker/daterangepicker.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\daterangepicker\daterangepicker.css'
+2023-08-28 18:50:00.480 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/daterangepicker/daterangepicker.css - - - 200 8069 text/css 0.7277ms
+2023-08-28 18:50:00.483 +09:00  INF  Sending file. Request path: '/lib/dist/css/adminlte.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\css\adminlte.min.css'
+2023-08-28 18:50:00.483 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css - - - 200 1396747 text/css 6.8858ms
+2023-08-28 18:50:00.484 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/summernote/summernote-bs4.min.css - -
+2023-08-28 18:50:00.485 +09:00  INF  Sending file. Request path: '/lib/plugins/summernote/summernote-bs4.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\summernote\summernote-bs4.min.css'
+2023-08-28 18:50:00.485 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/summernote/summernote-bs4.min.css - - - 200 19513 text/css 0.7724ms
+2023-08-28 18:50:00.488 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-08-28 18:50:00.488 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2023-08-28 18:50:00.488 +09:00  INF  Sending file. Request path: '/css/site.css'. Physical path: 'D:\C#\asp_demo\wwwroot\css\site.css'
+2023-08-28 18:50:00.488 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 0.5844ms
+2023-08-28 18:50:00.489 +09:00  INF  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2023-08-28 18:50:00.489 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 1.4024ms
+2023-08-28 18:50:00.512 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/css/custom.css?v=e9afqS8PlaoSmevHMp7-wxMOrom9f0QG1J_CosEsNL0 - -
+2023-08-28 18:50:00.512 +09:00  INF  Sending file. Request path: '/css/custom.css'. Physical path: 'D:\C#\asp_demo\wwwroot\css\custom.css'
+2023-08-28 18:50:00.512 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/css/custom.css?v=e9afqS8PlaoSmevHMp7-wxMOrom9f0QG1J_CosEsNL0 - - - 200 2524 text/css 0.6512ms
+2023-08-28 18:50:00.513 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/jquery.slim.min.js - -
+2023-08-28 18:50:00.513 +09:00  INF  Sending file. Request path: '/lib/jquery.slim.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\jquery.slim.min.js'
+2023-08-28 18:50:00.513 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/jquery.slim.min.js - - - 200 72666 application/javascript 0.7331ms
+2023-08-28 18:50:00.518 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/bootstrap.bundle.min.js - -
+2023-08-28 18:50:00.518 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/popper.min.js - -
+2023-08-28 18:50:00.518 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/img/user1-128x128.jpg - -
+2023-08-28 18:50:00.518 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/img/user8-128x128.jpg - -
+2023-08-28 18:50:00.518 +09:00  INF  Sending file. Request path: '/lib/popper.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\popper.min.js'
+2023-08-28 18:50:00.518 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/popper.min.js - - - 200 21233 application/javascript 0.4874ms
+2023-08-28 18:50:00.518 +09:00  INF  Sending file. Request path: '/lib/dist/img/user1-128x128.jpg'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\img\user1-128x128.jpg'
+2023-08-28 18:50:00.519 +09:00  INF  Sending file. Request path: '/lib/dist/img/user8-128x128.jpg'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\img\user8-128x128.jpg'
+2023-08-28 18:50:00.519 +09:00  INF  Sending file. Request path: '/lib/bootstrap.bundle.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\bootstrap.bundle.min.js'
+2023-08-28 18:50:00.519 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/img/user1-128x128.jpg - - - 200 2750 image/jpeg 0.5866ms
+2023-08-28 18:50:00.519 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/img/user8-128x128.jpg - - - 200 4983 image/jpeg 0.5689ms
+2023-08-28 18:50:00.519 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/bootstrap.bundle.min.js - - - 200 83376 application/javascript 0.9514ms
+2023-08-28 18:50:00.609 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/img/user3-128x128.jpg - -
+2023-08-28 18:50:00.609 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/img/AdminLTELogo.png - -
+2023-08-28 18:50:00.609 +09:00  INF  Sending file. Request path: '/lib/dist/img/user3-128x128.jpg'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\img\user3-128x128.jpg'
+2023-08-28 18:50:00.609 +09:00  INF  Sending file. Request path: '/lib/dist/img/AdminLTELogo.png'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\img\AdminLTELogo.png'
+2023-08-28 18:50:00.610 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/img/user3-128x128.jpg - - - 200 3398 image/jpeg 0.7397ms
+2023-08-28 18:50:00.610 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/img/AdminLTELogo.png - - - 200 2637 image/png 0.7388ms
+2023-08-28 18:50:00.611 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css.map - -
+2023-08-28 18:50:00.612 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2023-08-28 18:50:00.615 +09:00  INF  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2023-08-28 18:50:00.615 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 449111 text/plain 2.7714ms
+2023-08-28 18:50:00.628 +09:00  INF  Sending file. Request path: '/lib/dist/css/adminlte.min.css.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\css\adminlte.min.css.map'
+2023-08-28 18:50:00.629 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css.map - - - 200 3846965 text/plain 17.5773ms
+2023-08-28 18:50:00.664 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/img/user2-160x160.jpg - -
+2023-08-28 18:50:00.665 +09:00  INF  Sending file. Request path: '/lib/dist/img/user2-160x160.jpg'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\img\user2-160x160.jpg'
+2023-08-28 18:50:00.665 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/img/user2-160x160.jpg - - - 200 6905 image/jpeg 0.6390ms
+2023-08-28 18:50:00.674 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/chart.js/Chart.min.js - -
+2023-08-28 18:50:00.675 +09:00  INF  Sending file. Request path: '/lib/plugins/chart.js/Chart.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\chart.js\Chart.min.js'
+2023-08-28 18:50:00.675 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/chart.js/Chart.min.js - - - 200 173077 application/javascript 1.1463ms
+2023-08-28 18:50:00.684 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/sparklines/sparkline.js - -
+2023-08-28 18:50:00.684 +09:00  INF  Sending file. Request path: '/lib/plugins/sparklines/sparkline.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\sparklines\sparkline.js'
+2023-08-28 18:50:00.684 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/sparklines/sparkline.js - - - 200 7219 application/javascript 0.5253ms
+2023-08-28 18:50:00.698 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/jquery-knob/jquery.knob.min.js - -
+2023-08-28 18:50:00.699 +09:00  INF  Sending file. Request path: '/lib/plugins/jquery-knob/jquery.knob.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\jquery-knob\jquery.knob.min.js'
+2023-08-28 18:50:00.699 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/jquery-knob/jquery.knob.min.js - - - 200 10804 application/javascript 0.5289ms
+2023-08-28 18:50:00.701 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/moment/moment.min.js - -
+2023-08-28 18:50:00.701 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/bootstrap.bundle.min.js.map - -
+2023-08-28 18:50:00.701 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/daterangepicker/daterangepicker.js - -
+2023-08-28 18:50:00.701 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/popper.min.js.map - -
+2023-08-28 18:50:00.701 +09:00  DBG  The request path /lib/bootstrap.bundle.min.js.map does not match an existing file
+2023-08-28 18:50:00.702 +09:00  DBG  The request path /lib/popper.min.js.map does not match an existing file
+2023-08-28 18:50:00.702 +09:00  INF  Sending file. Request path: '/lib/plugins/daterangepicker/daterangepicker.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\daterangepicker\daterangepicker.js'
+2023-08-28 18:50:00.702 +09:00  INF  Sending file. Request path: '/lib/plugins/moment/moment.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\moment\moment.min.js'
+2023-08-28 18:50:00.702 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/daterangepicker/daterangepicker.js - - - 200 67842 application/javascript 0.7488ms
+2023-08-28 18:50:00.702 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/moment/moment.min.js - - - 200 58862 application/javascript 0.8792ms
+2023-08-28 18:50:00.702 +09:00  DBG  No candidates found for the request path '/lib/bootstrap.bundle.min.js.map'
+2023-08-28 18:50:00.702 +09:00  DBG  No candidates found for the request path '/lib/popper.min.js.map'
+2023-08-28 18:50:00.702 +09:00  DBG  Request did not match any endpoints
+2023-08-28 18:50:00.702 +09:00  DBG  Request did not match any endpoints
+2023-08-28 18:50:00.702 +09:00  INF  Request GET /lib/bootstrap.bundle.min.js.map => 200
+2023-08-28 18:50:00.702 +09:00  INF  Request GET /lib/popper.min.js.map => 200
+2023-08-28 18:50:00.702 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/bootstrap.bundle.min.js.map - - - 404 0 - 1.2915ms
+2023-08-28 18:50:00.703 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/popper.min.js.map - - - 404 0 - 1.2080ms
+2023-08-28 18:50:00.710 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js - -
+2023-08-28 18:50:00.711 +09:00  INF  Sending file. Request path: '/lib/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\tempusdominus-bootstrap-4\js\tempusdominus-bootstrap-4.min.js'
+2023-08-28 18:50:00.711 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js - - - 200 61588 application/javascript 0.8654ms
+2023-08-28 18:50:00.721 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/summernote/summernote-bs4.min.js - -
+2023-08-28 18:50:00.722 +09:00  INF  Sending file. Request path: '/lib/plugins/summernote/summernote-bs4.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\summernote\summernote-bs4.min.js'
+2023-08-28 18:50:00.722 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/summernote/summernote-bs4.min.js - - - 200 153030 application/javascript 1.0874ms
+2023-08-28 18:50:00.724 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js - -
+2023-08-28 18:50:00.724 +09:00  INF  Sending file. Request path: '/lib/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\overlayScrollbars\js\jquery.overlayScrollbars.min.js'
+2023-08-28 18:50:00.724 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js - - - 200 42602 application/javascript 0.6543ms
+2023-08-28 18:50:00.728 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js - -
+2023-08-28 18:50:00.728 +09:00  INF  Sending file. Request path: '/lib/dist/js/adminlte.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\js\adminlte.js'
+2023-08-28 18:50:00.728 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js - - - 200 104260 application/javascript 0.9684ms
+2023-08-28 18:50:00.737 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/js/country.js - -
+2023-08-28 18:50:00.737 +09:00  INF  Sending file. Request path: '/js/country.js'. Physical path: 'D:\C#\asp_demo\wwwroot\js\country.js'
+2023-08-28 18:50:00.738 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/js/country.js - - - 200 1565 application/javascript 0.5723ms
+2023-08-28 18:50:00.739 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - -
+2023-08-28 18:50:00.739 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2319ms
+2023-08-28 18:50:00.748 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/moment/moment.min.js.map - -
+2023-08-28 18:50:00.749 +09:00  INF  Sending file. Request path: '/lib/plugins/moment/moment.min.js.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\moment\moment.min.js.map'
+2023-08-28 18:50:00.749 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/moment/moment.min.js.map - - - 200 86532 text/plain 1.1422ms
+2023-08-28 18:50:00.791 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js.map - -
+2023-08-28 18:50:00.793 +09:00  INF  Sending file. Request path: '/lib/dist/js/adminlte.js.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\js\adminlte.js.map'
+2023-08-28 18:50:00.793 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js.map - - - 200 179858 text/plain 1.4914ms
+2023-08-28 18:50:00.798 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 - -
+2023-08-28 18:50:00.798 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 - -
+2023-08-28 18:50:00.799 +09:00  INF  Sending file. Request path: '/lib/plugins/fontawesome-free/webfonts/fa-regular-400.woff2'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\fontawesome-free\webfonts\fa-regular-400.woff2'
+2023-08-28 18:50:00.799 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 - - - 200 13224 font/woff2 0.7705ms
+2023-08-28 18:50:00.799 +09:00  INF  Sending file. Request path: '/lib/plugins/fontawesome-free/webfonts/fa-solid-900.woff2'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\fontawesome-free\webfonts\fa-solid-900.woff2'
+2023-08-28 18:50:00.799 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 - - - 200 78268 font/woff2 0.9820ms
+2023-08-28 18:50:00.849 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/favicon.ico - -
+2023-08-28 18:50:00.850 +09:00  INF  Sending file. Request path: '/favicon.ico'. Physical path: 'D:\C#\asp_demo\wwwroot\favicon.ico'
+2023-08-28 18:50:00.850 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/favicon.ico - - - 200 5430 image/x-icon 0.7443ms
+2023-08-28 18:50:05.096 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/Admin/Store - -
+2023-08-28 18:50:05.096 +09:00  DBG  The request path /Admin/Store does not match a supported file type
+2023-08-28 18:50:05.096 +09:00  DBG  1 candidate(s) found for the request path '/Admin/Store'
+2023-08-28 18:50:05.096 +09:00  DBG  Endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)' with route pattern '{area:exists}/{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Admin/Store'
+2023-08-28 18:50:05.096 +09:00  DBG  Request matched endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)'
+2023-08-28 18:50:05.096 +09:00  INF  Request GET /Admin/Store => 200
+2023-08-28 18:50:05.096 +09:00  INF  Executing endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)'
+2023-08-28 18:50:05.097 +09:00  INF  Route matched with {area = "Admin", action = "Index", controller = "Store"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController (hienv_asp).
+2023-08-28 18:50:05.097 +09:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-08-28 18:50:05.097 +09:00  DBG  Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-08-28 18:50:05.097 +09:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)","Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2023-08-28 18:50:05.097 +09:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-08-28 18:50:05.097 +09:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2023-08-28 18:50:05.097 +09:00  DBG  Executing controller factory for controller MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController (hienv_asp)
+2023-08-28 18:50:05.098 +09:00  DBG  Executed controller factory for controller MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController (hienv_asp)
+2023-08-28 18:50:05.098 +09:00  DBG  Entity Framework Core 7.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.9' with options: None
+2023-08-28 18:50:05.098 +09:00  DBG  Creating DbCommand for 'ExecuteReader'.
+2023-08-28 18:50:05.098 +09:00  DBG  Creating DbConnection.
+2023-08-28 18:50:05.098 +09:00  DBG  Created DbConnection. (0ms).
+2023-08-28 18:50:05.098 +09:00  DBG  Created DbCommand for 'ExecuteReader' (0ms).
+2023-08-28 18:50:05.098 +09:00  DBG  Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-08-28 18:50:05.098 +09:00  DBG  Opening connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:05.098 +09:00  DBG  Opened connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:05.098 +09:00  DBG  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[store_id], [o].[name], [o].[ssl], [o].[url]
+FROM [oc_store] AS [o]
+2023-08-28 18:50:05.099 +09:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[store_id], [o].[name], [o].[ssl], [o].[url]
+FROM [oc_store] AS [o]
+2023-08-28 18:50:05.099 +09:00  DBG  Closing data reader to 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:05.099 +09:00  DBG  A data reader for 'open_cart' on server '6925-HIENNV-DT2\HIENNV' is being disposed after spending 0ms reading results.
+2023-08-28 18:50:05.099 +09:00  DBG  Closing connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:05.099 +09:00  DBG  Closed connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV' (0ms).
+2023-08-28 18:50:05.099 +09:00  DBG  View lookup cache miss for view 'Index' in controller 'Store'.
+2023-08-28 18:50:05.099 +09:00  INF  Executing ViewResult, running view Index.
+2023-08-28 18:50:05.100 +09:00  DBG  The view path '/Areas/Admin/Views/Store/Index.cshtml' was found in 0.3669ms.
+2023-08-28 18:50:05.101 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:05.101 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Store/Create and 
+2023-08-28 18:50:05.101 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Store/Create
+2023-08-28 18:50:05.101 +09:00  DBG  View lookup cache miss for view '_Layout' in controller 'Store'.
+2023-08-28 18:50:05.102 +09:00  DBG  View lookup cache miss for view '_NavPartialTop' in controller 'Store'.
+2023-08-28 18:50:05.103 +09:00  DBG  View lookup cache miss for view '_NavPartialLeft' in controller 'Store'.
+2023-08-28 18:50:05.104 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:05.104 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Category and 
+2023-08-28 18:50:05.104 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Category
+2023-08-28 18:50:05.104 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:05.104 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:50:05.104 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:50:05.104 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:05.104 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Store and 
+2023-08-28 18:50:05.104 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Store
+2023-08-28 18:50:05.104 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:05.104 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:50:05.104 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:50:05.104 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:05.104 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Country and 
+2023-08-28 18:50:05.104 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Country
+2023-08-28 18:50:05.104 +09:00  DBG  Found the endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-08-28 18:50:05.104 +09:00  DBG  Successfully processed template {area:exists}/{controller=Home}/{action=Index}/{id?} for Route: {area:exists}/{controller=Home}/{action=Index}/{id?} resulting in /Admin/Languages and 
+2023-08-28 18:50:05.104 +09:00  DBG  Link generation succeeded for endpoints ["Route: {area:exists}/{controller=Home}/{action=Index}/{id?}","Route: {controller=Home}/{action=Index}/{id?}"] with result /Admin/Languages
+2023-08-28 18:50:05.104 +09:00  DBG  View lookup cache miss for view '_Modals' in controller 'Store'.
+2023-08-28 18:50:05.105 +09:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-08-28 18:50:05.105 +09:00  INF  Executed ViewResult - view Index executed in 6.0709ms.
+2023-08-28 18:50:05.105 +09:00  INF  Executed action MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp) in 7.793ms
+2023-08-28 18:50:05.105 +09:00  INF  Executed endpoint 'MVC_hiennv.Areas.Admin.Languages.Controllers.StoreController.Index (hienv_asp)'
+2023-08-28 18:50:05.105 +09:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-08-28 18:50:05.105 +09:00  DBG  'ApplicationDbContext' disposed.
+2023-08-28 18:50:05.105 +09:00  DBG  Disposing connection to database 'open_cart' on server '6925-HIENNV-DT2\HIENNV'.
+2023-08-28 18:50:05.105 +09:00  DBG  Disposed connection to database '' on server '' (0ms).
+2023-08-28 18:50:05.106 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/Admin/Store - - - 200 - text/html;+charset=utf-8 9.4877ms
+2023-08-28 18:50:05.118 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - -
+2023-08-28 18:50:05.118 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.1230ms
+2023-08-28 18:50:05.174 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/bootstrap.bundle.min.js.map - -
+2023-08-28 18:50:05.174 +09:00  DBG  The request path /lib/bootstrap.bundle.min.js.map does not match an existing file
+2023-08-28 18:50:05.175 +09:00  DBG  No candidates found for the request path '/lib/bootstrap.bundle.min.js.map'
+2023-08-28 18:50:05.175 +09:00  DBG  Request did not match any endpoints
+2023-08-28 18:50:05.175 +09:00  INF  Request GET /lib/bootstrap.bundle.min.js.map => 200
+2023-08-28 18:50:05.175 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/bootstrap.bundle.min.js.map - - - 404 0 - 1.1828ms
+2023-08-28 18:50:05.177 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/popper.min.js.map - -
+2023-08-28 18:50:05.178 +09:00  DBG  The request path /lib/popper.min.js.map does not match an existing file
+2023-08-28 18:50:05.178 +09:00  DBG  No candidates found for the request path '/lib/popper.min.js.map'
+2023-08-28 18:50:05.178 +09:00  DBG  Request did not match any endpoints
+2023-08-28 18:50:05.178 +09:00  INF  Request GET /lib/popper.min.js.map => 200
+2023-08-28 18:50:05.178 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/popper.min.js.map - - - 404 0 - 0.2854ms
+2023-08-28 18:50:05.268 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2023-08-28 18:50:05.268 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css.map - -
+2023-08-28 18:50:05.277 +09:00  INF  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2023-08-28 18:50:05.277 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 449111 text/plain 9.5797ms
+2023-08-28 18:50:05.294 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/moment/moment.min.js.map - -
+2023-08-28 18:50:05.302 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/daterangepicker/daterangepicker.js - -
+2023-08-28 18:50:05.305 +09:00  INF  Sending file. Request path: '/lib/plugins/daterangepicker/daterangepicker.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\daterangepicker\daterangepicker.js'
+2023-08-28 18:50:05.305 +09:00  INF  Sending file. Request path: '/lib/plugins/moment/moment.min.js.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\moment\moment.min.js.map'
+2023-08-28 18:50:05.305 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/daterangepicker/daterangepicker.js - - - 200 67842 application/javascript 3.1212ms
+2023-08-28 18:50:05.305 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/moment/moment.min.js.map - - - 200 86532 text/plain 11.0586ms
+2023-08-28 18:50:05.306 +09:00  INF  Sending file. Request path: '/lib/dist/css/adminlte.min.css.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\css\adminlte.min.css.map'
+2023-08-28 18:50:05.306 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/css/adminlte.min.css.map - - - 200 3846965 text/plain 37.3414ms
+2023-08-28 18:50:05.323 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js - -
+2023-08-28 18:50:05.323 +09:00  INF  Sending file. Request path: '/lib/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\tempusdominus-bootstrap-4\js\tempusdominus-bootstrap-4.min.js'
+2023-08-28 18:50:05.323 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js - - - 200 61588 application/javascript 0.6887ms
+2023-08-28 18:50:05.328 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/summernote/summernote-bs4.min.js - -
+2023-08-28 18:50:05.329 +09:00  INF  Sending file. Request path: '/lib/plugins/summernote/summernote-bs4.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\summernote\summernote-bs4.min.js'
+2023-08-28 18:50:05.329 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/summernote/summernote-bs4.min.js - - - 200 153030 application/javascript 1.0103ms
+2023-08-28 18:50:05.367 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js - -
+2023-08-28 18:50:05.368 +09:00  INF  Sending file. Request path: '/lib/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\plugins\overlayScrollbars\js\jquery.overlayScrollbars.min.js'
+2023-08-28 18:50:05.368 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js - - - 200 42602 application/javascript 0.7061ms
+2023-08-28 18:50:05.381 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js - -
+2023-08-28 18:50:05.382 +09:00  INF  Sending file. Request path: '/lib/dist/js/adminlte.js'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\js\adminlte.js'
+2023-08-28 18:50:05.382 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js - - - 200 104260 application/javascript 1.1005ms
+2023-08-28 18:50:05.396 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/js/country.js - -
+2023-08-28 18:50:05.397 +09:00  INF  Sending file. Request path: '/js/country.js'. Physical path: 'D:\C#\asp_demo\wwwroot\js\country.js'
+2023-08-28 18:50:05.397 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/js/country.js - - - 200 1565 application/javascript 0.4605ms
+2023-08-28 18:50:05.445 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/favicon.ico - -
+2023-08-28 18:50:05.445 +09:00  INF  Sending file. Request path: '/favicon.ico'. Physical path: 'D:\C#\asp_demo\wwwroot\favicon.ico'
+2023-08-28 18:50:05.446 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/favicon.ico - - - 200 5430 image/x-icon 0.5926ms
+2023-08-28 18:50:05.488 +09:00  INF  Request starting HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js.map - -
+2023-08-28 18:50:05.489 +09:00  INF  Sending file. Request path: '/lib/dist/js/adminlte.js.map'. Physical path: 'D:\C#\asp_demo\wwwroot\lib\dist\js\adminlte.js.map'
+2023-08-28 18:50:05.489 +09:00  INF  Request finished HTTP/2 GET https://localhost:7171/lib/dist/js/adminlte.js.map - - - 200 179858 text/plain 1.2614ms
+2023-08-28 18:52:16.657 +09:00  DBG  Connection id "0HMT7LAEUVNLI" is closing.
+2023-08-28 18:52:16.658 +09:00  DBG  Connection id "0HMT7LAEUVNLI" is closed. The last processed stream ID was 109.
+2023-08-28 18:52:16.660 +09:00  DBG  Connection id "0HMT7LAEUVNLI" received FIN.
+2023-08-28 18:52:16.660 +09:00  DBG  Connection id "0HMT7LAEUVNLI" sending FIN because: "The client closed the connection."
+2023-08-28 18:52:16.674 +09:00  DBG  Connection id "0HMT7LAEUVNLI" stopped.
+2023-08-28 19:03:53.052 +09:00  INF  Application is shutting down...
+2023-08-28 19:03:53.054 +09:00  DBG  Hosting stopping
+2023-08-28 19:03:53.065 +09:00  DBG  Hosting stopped
