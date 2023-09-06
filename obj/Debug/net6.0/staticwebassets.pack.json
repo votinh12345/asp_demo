@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\image\\no_image-100x100.png"
     },
     {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\image\\no_image-100x100_1.png",
+      "PackagePath": "staticwebassets\\image\\no_image-100x100_1.png"
+    },
+    {
       "Id": "D:\\C#\\asp_demo\\wwwroot\\js\\category.js",
       "PackagePath": "staticwebassets\\js\\category.js"
     },
@@ -8499,6 +8503,106 @@
     {
       "Id": "D:\\C#\\asp_demo\\wwwroot\\lib\\popper.min.js",
       "PackagePath": "staticwebassets\\lib\\popper.min.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\all.min.css",
+      "PackagePath": "staticwebassets\\lib_file_manager\\all.min.css"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib_file_manager\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\cropper.min.css",
+      "PackagePath": "staticwebassets\\lib_file_manager\\cropper.min.css"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\cropper.min.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\cropper.min.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\dropzone.min.css",
+      "PackagePath": "staticwebassets\\lib_file_manager\\dropzone.min.css"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\dropzone.min.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\dropzone.min.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\filemanager.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\filemanager.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\filemanager.min.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\filemanager.min.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\lib_file_manager\\jquery-ui.min.css"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\lfm.css",
+      "PackagePath": "staticwebassets\\lib_file_manager\\lfm.css"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\mime-icons.min.css",
+      "PackagePath": "staticwebassets\\lib_file_manager\\mime-icons.min.css"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\popper.min.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\script.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\script.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\stand-alone-button.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\stand-alone-button.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.woff2"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.hienv_asp.props",

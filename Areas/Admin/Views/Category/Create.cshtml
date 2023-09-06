@@ -1,10 +1,11 @@
-﻿@model hienv_asp.Models.Category
+﻿@using Microsoft.AspNetCore.Http
+@model hienv_asp.Models.Category
 
 @{
     ViewData["Title"] = "Created";
     Layout = "_Layout";
 }
-
+<input type="hidden" id="url_file_manager" value="{asp-controller=" Languages" asp-area="Admin" }"  />
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -63,12 +64,6 @@
                                                                     <li class="nav-item">
                                                                         <a class="nav-link active" id="custom-tabs-three-home-tab" data-toggle="pill" href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true"><img src="@Url.Content("~/image/language/en-gb.png")" title="English" class="img-language">English</a>
                                                                     </li>
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false"><img src="@Url.Content("~/image/language/nl-nl.png")" title="Dutch" class="img-language">Dutch</a>
-                                                                    </li>
-                                                                    <li class="nav-item">
-                                                                        <a class="nav-link" id="custom-tabs-three-messages-tab" data-toggle="pill" href="#custom-tabs-three-messages" role="tab" aria-controls="custom-tabs-three-messages" aria-selected="false"><img src="@Url.Content("~/image/language/bg-bg.png")" title="Bulgarian" class="img-language">Bulgarian</a>
-                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                             <div class="card-body">
@@ -111,89 +106,8 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
-                                                                        <div class="tab-pane fade form-group-custom show" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
-                                                                            <div class="form-group">
-                                                                                <label class="col-sm-2 control-label" for="input-search-fragment2"><span data-toggle="tooltip" title="" data-original-title="Search and insert a Fragment in the fields 'Information Title, Description, Meta Tag Title, Meta Tag Description'.<br /><br />Use Dynamic Fragments like 'Settings' and 'Product'.">Search a Fragment</span></label>
-                                                                                <div class="col-sm-10">
-                                                                                    <input type="text" name="search-fragment" value="" placeholder="Search and insert a Fragment in the fields 'Information Title, Description, Meta Tag Title, Meta Tag Description'" id="input-search-fragment1" class="form-control" autocomplete="off"><ul class="dropdown-menu"></ul>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group required">
-                                                                                <label class="col-sm-2 control-label" for="input-name1">Category Name</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <input type="text" name="category_description[2][name]" value="" placeholder="Category Name" id="input-name1" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <label class="col-sm-2 control-label" for="input-description1">Description</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <textarea name="category_description[2][description]" placeholder="Description" id="input-description2" data-toggle="summernote" data-lang="" class="form-control" style="display: none;"></textarea>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group required">
-                                                                                <label class="col-sm-2 control-label" for="input-meta-title1">Meta Tag Title</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <input type="text" name="category_description[2][meta_title]" value="" placeholder="Meta Tag Title" id="input-meta-title2" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <label class="col-sm-2 control-label" for="input-meta-description1">Meta Tag Description</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <textarea name="category_description[2][meta_description]" rows="5" placeholder="Meta Tag Description" id="input-meta-description2" class="form-control"></textarea>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <label class="col-sm-2 control-label" for="input-meta-keyword1">Meta Tag Keywords</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <textarea name="category_description[2][meta_keyword]" rows="5" placeholder="Meta Tag Keywords" id="input-meta-keyword1" class="form-control"></textarea>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel" aria-labelledby="custom-tabs-three-messages-tab">
-                                                                        <div class="tab-pane fade form-group-custom show" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
-                                                                            <div class="form-group">
-                                                                                <label class="col-sm-2 control-label" for="input-search-fragment3"><span data-toggle="tooltip" title="" data-original-title="Search and insert a Fragment in the fields 'Information Title, Description, Meta Tag Title, Meta Tag Description'.<br /><br />Use Dynamic Fragments like 'Settings' and 'Product'.">Search a Fragment</span></label>
-                                                                                <div class="col-sm-10">
-                                                                                    <input type="text" name="search-fragment" value="" placeholder="Search and insert a Fragment in the fields 'Information Title, Description, Meta Tag Title, Meta Tag Description'" id="input-search-fragment1" class="form-control" autocomplete="off"><ul class="dropdown-menu"></ul>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group required">
-                                                                                <label class="col-sm-2 control-label" for="input-name3">Category Name</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <input type="text" name="category_description[3][name]" value="" placeholder="Category Name" id="input-name3" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <label class="col-sm-2 control-label" for="input-description1">Description</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <textarea name="category_description[3][description]" placeholder="Description" id="input-description3" data-toggle="summernote" data-lang="" class="form-control" style="display: none;"></textarea>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group required">
-                                                                                <label class="col-sm-2 control-label" for="input-meta-title1">Meta Tag Title</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <input type="text" name="category_description[3][meta_title]" value="" placeholder="Meta Tag Title" id="input-meta-title3" class="form-control">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <label class="col-sm-2 control-label" for="input-meta-description1">Meta Tag Description</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <textarea name="category_description[3][meta_description]" rows="5" placeholder="Meta Tag Description" id="input-meta-description2" class="form-control"></textarea>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="form-group">
-                                                                                <label class="col-sm-2 control-label" for="input-meta-keyword1">Meta Tag Keywords</label>
-                                                                                <div class="col-sm-10">
-                                                                                    <textarea name="category_description[3][meta_keyword]" rows="5" placeholder="Meta Tag Keywords" id="input-meta-keyword1" class="form-control"></textarea>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                            <!-- /.card -->
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
@@ -226,9 +140,13 @@
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-sm-2 control-label">Image</label>
-                                                            <div class="col-sm-10">
-                                                                <a href="" id="thumb-image" data-toggle="image" class="img-thumbnail"><img src="@Url.Content("~/image/no_image-100x100.png")" alt="" title="" data-placeholder="@Url.Content("~/image/no_image-100x100.png")"></a>
+                                                            <div class="col-sm-10 card image">
+                                                                <img src="@Url.Content("~/image/no_image-100x100_1.png")" alt="" title="" class="card-img-top" data-placeholder="@Url.Content("~/image/no_image-100x100_1.png")">
                                                                 <input type="hidden" name="image" value="" id="input-image">
+                                                                <div class="card-body">
+                                                                    <button type="button" data-oc-toggle="image" data-oc-target="#input-image" data-oc-thumb="#thumb-image" data-toggle="modal" data-target="#thumb-image" class="btn btn-primary btn-sm btn-block"><i class="fas fa-pencil-alt"></i> Edit</button>
+                                                                    <button type="button" data-oc-toggle="clear" data-oc-target="#input-image" data-oc-thumb="#thumb-image" class="btn btn-warning btn-sm btn-block"><i class="fas fa-trash-alt"></i> Clear</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
@@ -280,15 +198,7 @@
                                                                             <div class="input-group">
                                                                                 <span class="input-group-addon"><img src="@Url.Content("~/image/language/en-gb.png")" title="English"></span>
                                                                                 <input type="text" name="category_seo_url[0][1]" value="" placeholder="Keyword" class="form-control">
-                                                                            </div>
-                                                                            <div class="input-group">
-                                                                                <span class="input-group-addon"><img src="@Url.Content("~/image/language/nl-nl.png")" title="Dutch"></span>
-                                                                                <input type="text" name="category_seo_url[0][2]" value="" placeholder="Keyword" class="form-control">
-                                                                            </div>
-                                                                            <div class="input-group">
-                                                                                <span class="input-group-addon"><img src="@Url.Content("~/image/language/bg-bg.png")" title="Bulgarian"></span>
-                                                                                <input type="text" name="category_seo_url[0][3]" value="" placeholder="Keyword" class="form-control">
-                                                                            </div>
+                                                                            </div> 
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -306,31 +216,10 @@
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
-
                                                                     <tr>
                                                                         <td class="text-left">Default</td>
                                                                         <td class="text-left">
-                                                                            <select name="category_layout[0]" class="form-control custom-select">
-                                                                                <option value=""></option>
-                                                                                <option value="6">Account</option>
-                                                                                <option value="10">Affiliate</option>
-                                                                                <option value="3">Category</option>
-                                                                                <option value="7">Checkout</option>
-                                                                                <option value="12">Compare</option>
-                                                                                <option value="8">Contact</option>
-                                                                                <option value="4">Default</option>
-                                                                                <option value="1">Home</option>
-                                                                                <option value="11">Information</option>
-                                                                                <option value="14">Journal Blog</option>
-                                                                                <option value="15">Journal Blog Post</option>
-                                                                                <option value="5">Manufacturer</option>
-                                                                                <option value="18">Manufacturer info</option>
-                                                                                <option value="17">Mega Filter PRO</option>
-                                                                                <option value="2">Product</option>
-                                                                                <option value="16">Quick Checkout</option>
-                                                                                <option value="13">Search</option>
-                                                                                <option value="9">Sitemap</option>
-                                                                            </select>
+                                                                            <select name="category_layout[0]" class="form-control custom-select"></select>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -354,7 +243,7 @@
         </div>
     </div>
 </section>
-
+@await Component.InvokeAsync("FileManager");
 @section Scripts{
     <script src="~/lib/plugins/codemirror/codemirror.js"></script>
     <script src="~/js/category.js"></script>

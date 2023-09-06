@@ -13,7 +13,10 @@ builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddRazorOptions(options =>
+{
+    options.ViewLocationFormats.Add("/{0}.cshtml");
+});
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnect")));
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
