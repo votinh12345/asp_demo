@@ -1,4 +1,4 @@
-var lfm_route = location.origin + location.pathname;
+var lfm_route = document.getElementById('link-file-manager').href;
 var show_list;
 var sort_type = 'alphabetic';
 var multi_selection_enabled = false;
@@ -32,7 +32,7 @@ $.fn.fab = function (options) {
 };
 
 function loadFolders() {
-    performLfmRequest('folders', {}, 'html')
+    performLfmRequest('Folders', {}, 'html')
         .done(function (data) {
             $('#tree').html(data);
             loadItems();
@@ -46,7 +46,7 @@ function defaultParameters() {
 }
 
 function performLfmRequest(url, parameter, type) {
-    var data = defaultParameters();
+    var data = {};
 
     if (parameter != null) {
         $.each(parameter, function (key, value) {
@@ -57,17 +57,18 @@ function performLfmRequest(url, parameter, type) {
     return $.ajax({
         type: 'GET',
         beforeSend: function (request) {
-            var token = getUrlParam('token');
+            var token =  $('input[name="__RequestVerificationToken"]').val();
             if (token !== null) {
                 request.setRequestHeader("Authorization", 'Bearer ' + token);
             }
         },
-        dataType: type || 'text',
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
         url: lfm_route + '/' + url,
         data: data,
         cache: false
     }).fail(function (jqXHR, textStatus, errorThrown) {
-        displayErrorResponse(jqXHR);
+        //displayErrorResponse(jqXHR);
     });
 }
 $(document).ready(function () {

@@ -39,8 +39,8 @@
     <div class="wrapper">
         @{
             var pages = Context.Items["pages"];
-            Console.WriteLine(pages);
         }
+        <a hidden asp-controller="FileManage" asp-area="" asp-action="" id="link-file-manager"></a>
         <input type="hidden" value="@pages" id="tesss"/>
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
