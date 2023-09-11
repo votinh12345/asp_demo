@@ -32,10 +32,17 @@ $.fn.fab = function (options) {
 };
 
 function loadFolders() {
-    performLfmRequest('Folders', {}, 'html')
+    performLfmRequest('Folders', {})
         .done(function (data) {
-            $('#tree').html(data);
-            loadItems();
+            const tree = new Tree(document.getElementById('tree'));
+            tree.on('created', (e, node) => {
+                e.node = node;
+            });
+            tree.on('select', e => {
+                console.log(tree.hierarchy(e).map(e => e.node));
+            });
+            tree.json(data);
+            loadItems("all", 1);
         });
 }
 function defaultParameters() {
@@ -45,15 +52,13 @@ function defaultParameters() {
     };
 }
 
-function performLfmRequest(url, parameter, type) {
+function performLfmRequest(url, parameter) {
     var data = {};
-
     if (parameter != null) {
         $.each(parameter, function (key, value) {
             data[key] = value;
         });
     }
-
     return $.ajax({
         type: 'GET',
         beforeSend: function (request) {
@@ -70,6 +75,19 @@ function performLfmRequest(url, parameter, type) {
     }).fail(function (jqXHR, textStatus, errorThrown) {
         //displayErrorResponse(jqXHR);
     });
+}
+
+function loading(show_loading) {
+    $('#loading').toggleClass('d-none', !show_loading);
+}
+
+function loadItems(working_dir, page) {
+    loading(true);
+    performLfmRequest('GetAllItemOnFolder', { Dir: working_dir, page: page || 1 })
+        .done(function (data) {
+            console.log(data);
+            
+        });
 }
 $(document).ready(function () {
     $('#fab').fab({

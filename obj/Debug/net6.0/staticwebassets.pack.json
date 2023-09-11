@@ -8525,6 +8525,10 @@
       "PackagePath": "staticwebassets\\lib_file_manager\\cropper.min.js"
     },
     {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\download.svg",
+      "PackagePath": "staticwebassets\\lib_file_manager\\download.svg"
+    },
+    {
       "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\dropzone.min.css",
       "PackagePath": "staticwebassets\\lib_file_manager\\dropzone.min.css"
     },
@@ -8571,6 +8575,18 @@
     {
       "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\stand-alone-button.js",
       "PackagePath": "staticwebassets\\lib_file_manager\\stand-alone-button.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\tree.css",
+      "PackagePath": "staticwebassets\\lib_file_manager\\tree.css"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\tree.js",
+      "PackagePath": "staticwebassets\\lib_file_manager\\tree.js"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\lib_file_manager\\tree_menu1.svg",
+      "PackagePath": "staticwebassets\\lib_file_manager\\tree_menu1.svg"
     },
     {
       "Id": "D:\\C#\\asp_demo\\wwwroot\\webfonts\\fa-brands-400.ttf",
