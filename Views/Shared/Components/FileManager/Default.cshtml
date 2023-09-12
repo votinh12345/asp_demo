@@ -1,6 +1,6 @@
 ﻿<link rel="stylesheet" href="~/lib_file_manager/all.min.css">
 <link rel="stylesheet" href="~/lib_file_manager/cropper.min.css">
-<link rel="stylesheet" href="~/lib_file_manager/dropzone.min.css">
+<link rel="stylesheet" href="~/lib/plugins/dropzone/min/dropzone.min.css" />
 <link rel="stylesheet" href="~/lib_file_manager/mime-icons.min.css">
 <link rel="stylesheet" href="~/lib_file_manager/lfm.css">
 <link rel="stylesheet" href="~/lib_file_manager/tree.css">
@@ -31,35 +31,81 @@
                         </div>
                     </div>
                 </div>
-
-                <nav class="bg-light fixed-bottom border-top d-none" id="actions">
-                    <a data-action="open" data-multiple="false"><i class="fas fa-folder-open"></i>Open Folder</a>
-                    <a data-action="preview" data-multiple="true"><i class="fas fa-images"></i>Preview</a>
-                    <a data-action="use" data-multiple="true"><i class="fas fa-check"></i>Confirm</a>
-                </nav
+                <div id="modal-folder" class="row mb-3" style="display: none;">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <div class="input-group">
+                                <input type="text" name="folder" value="" placeholder="Folder Name" id="input-folder" class="form-control">
+                                <button type="button" title="New Folder" id="button-create" class="btn btn-primary"><i class="fas fa-plus-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row d-flex flex-row">
                     <hr>
-                    <div id="tree" class="simple-tree"></div>
-                    <div id="main">
-                        <div id="alerts"></div>
-                        <nav aria-label="breadcrumb" class="d-none d-lg-block" id="breadcrumbs">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item invisible">Home</li>
-                            </ol>
-                        </nav>
-                        <div id="empty" class="d-none">
-                            <i class="far fa-folder-open"></i>
-                            Folder is empty.
-                        </div>
-                        <div id="content"></div>
-                        <div id="pagination"></div>
-                        <a id="item-template" class="d-none">
-                            <div class="square"></div>
-                            <div class="info">
-                                <div class="item_name text-truncate"></div>
-                                <time class="text-muted font-weight-light text-truncate"></time>
+                    <div class="col-sm-3" style="float:left">
+                        <div id="tree" class="simple-tree"></div>
+                    </div>
+                    <div class="col-sm-9" style="float:right">
+                        <div id="main">
+                            <div id="alerts"></div>
+                            <div class="row" id="list-item-folder">
+
                             </div>
-                        </a>
+                            <nav aria-label="breadcrumb" class="d-none d-lg-block" id="breadcrumbs">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item invisible">Home</li>
+                                </ol>
+                            </nav>
+                            <div id="empty" class="d-none">
+                                <i class="far fa-folder-open"></i>
+                                Folder is empty.
+                            </div>
+                            <div id="content"></div>
+                            <div id="pagination"></div>
+                            <a id="item-template" class="d-none">
+                                <div class="square"></div>
+                                <div class="info">
+                                    <div class="item_name text-truncate"></div>
+                                    <time class="text-muted font-weight-light text-truncate"></time>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table table-striped files" id="previews">
+                    <div id="template" class="row mt-2">
+                        <div class="col-auto">
+                            <span class="preview"><img src="data:," alt="" data-dz-thumbnail /></span>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <p class="mb-0">
+                              <span class="lead" data-dz-name></span>
+                              (<span data-dz-size></span>)
+                            </p>
+                            <strong class="error text-danger" data-dz-errormessage></strong>
+                        </div>
+                        <div class="col-4 d-flex align-items-center">
+                            <div class="progress progress-striped active w-100" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                <div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+                            </div>
+                        </div>
+                        <div class="col-auto d-flex align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-primary start">
+                                    <i class="fas fa-upload"></i>
+                                    <span>Start</span>
+                                </button>
+                                <button data-dz-remove class="btn btn-warning cancel">
+                                    <i class="fas fa-times-circle"></i>
+                                    <span>Cancel</span>
+                                </button>
+                                <button data-dz-remove class="btn btn-danger delete">
+                                    <i class="fas fa-trash"></i>
+                                    <span>Delete</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,59 +117,6 @@
 <script src="~/lib_file_manager/bootstrap.min.js"></script>
 <script src="~/lib_file_manager/jquery-ui.min.js"></script>
 <script src="~/lib_file_manager/cropper.min.js"></script>
-<script src="~/lib_file_manager/dropzone.min.js"></script>
+<script src="~/lib/plugins/dropzone/min/dropzone.min.js"></script>
 <script src="~/lib_file_manager/tree.js"></script>
-<script>
-    var actions = [
-        {
-            name: 'rename',
-            icon: 'edit',
-            label: 'Rename',
-            multiple: false
-        },
-        {
-            name: 'download',
-            icon: 'download',
-            label: 'Download',
-            multiple: true
-        },
-        {
-            name: 'move',
-            icon: 'paste',
-            label: 'Move',
-            multiple: true
-        },
-        {
-            name: 'resize',
-            icon: 'arrows-alt',
-            label: 'Resize',
-            multiple: false
-        },
-        {
-            name: 'crop',
-            icon: 'crop',
-            label: 'Crop',
-            multiple: false
-        },
-        {
-            name: 'trash',
-            icon: 'trash',
-            label: 'Delete',
-            multiple: true
-        },
-    ];
-
-    var sortings = [
-        {
-            by: 'alphabetic',
-            icon: 'sort-alpha-down',
-            label: 'Sort By Alphabets'
-        },
-        {
-            by: 'time',
-            icon: 'sort-numeric-down',
-            label: 'Sort By Time'
-        }
-    ];
-</script>
 <script src="~/lib_file_manager/script.js"></script>

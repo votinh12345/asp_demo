@@ -1,8 +1,9 @@
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using hienv_asp.Context;
 using hienv_asp.Middleware;
 using Serilog;
-
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 var logger = new LoggerConfiguration().MinimumLevel.Debug()
@@ -16,6 +17,12 @@ builder.Logging.AddSerilog(logger);
 builder.Services.AddControllersWithViews().AddRazorOptions(options =>
 {
     options.ViewLocationFormats.Add("/{0}.cshtml");
+});
+builder.Services.AddControllers().AddFluentValidation(
+    v => {
+    v.ImplicitlyValidateChildProperties = true;
+    v.ImplicitlyValidateRootCollectionElements = true;
+    v.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 });
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnect")));

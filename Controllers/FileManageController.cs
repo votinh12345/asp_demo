@@ -7,8 +7,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static System.Net.WebRequestMethods;
 
 namespace hienv_asp.Controllers
 {
@@ -68,7 +70,7 @@ namespace hienv_asp.Controllers
             {
                 Dir = @"wwwroot/FileManager";
             }
-            Console.WriteLine(Dir);
+            
             string[] subdirectoryEntries = Directory.GetDirectories(Dir);
             foreach (string subdirectory in subdirectoryEntries)
             {
@@ -79,7 +81,29 @@ namespace hienv_asp.Controllers
                 folder.Add("Path", subdirectory);
                 ListItem.Add(folder);
             }
+            var filters = new String[] { "jpg", "jpeg", "png", "gif", "tiff", "bmp", "svg" };
+            DirectoryInfo dir = new DirectoryInfo(Dir);
+            foreach (var filter in filters)
+            {
+                FileInfo[] imageFiles = dir.GetFiles("*." + filter);
+                foreach (FileInfo f in imageFiles)
+                {
+                    Hashtable itemFile = new Hashtable();
+                    itemFile.Add("name", f.Name);
+                    itemFile.Add("type", "file");
+                    itemFile.Add("Path", f.FullName);
+                    ListItem.Add(itemFile);
+                }
+            }
             return Json(ListItem);
+        }
+
+        [HttpPost]
+        public IActionResult AddFolders()
+        {
+            var status = 200;
+
+            return Json("dasda");
         }
     }
 }

@@ -103,3 +103,6 @@
   background-color: #3a484e;
   border-color: #99defd;
 }
+#list-item-folder .form-check-input {
+    position:relative;
+}

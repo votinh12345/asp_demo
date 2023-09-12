@@ -81,71 +81,83 @@ function loading(show_loading) {
     $('#loading').toggleClass('d-none', !show_loading);
 }
 
+function renderListItemFolder(data) {
+    let html = '';
+    data.forEach(function (item, index) {
+        html += '<div class="col-sm-3 col-6 mb-3 text-center">';
+        html += '<div class="h-100">';
+        if (item.type == "folder") {
+            html += '<a href="javascript:void(0)" class="directory mb-1"><i class="fas fa-folder fa-5x"></i></a>';
+        } else if (item.type == "file") {
+            html += '<a href="javascript:void(0)" class="thumbnail mb-1"><img src="/FileManager/' + item.name + '" alt="profile-pic.png" title="profile-pic.png" class="img-thumbnail"></a>';
+        }
+        html += '<div>';
+        html += '<div class="form-check">';
+        html += '<label for="input-path-0" class="form-check-label mt-1">' + item.name + '</label>';
+        html += '<input type="checkbox" name="path[]" value="demo" id="input-path-0" class="form-check-input">';
+        html += '</div></div></div></div>';
+    });
+    return html;
+}
 function loadItems(working_dir, page) {
     loading(true);
     performLfmRequest('GetAllItemOnFolder', { Dir: working_dir, page: page || 1 })
         .done(function (data) {
-            console.log(data);
-            
+            let htmlItem = renderListItemFolder(data);
+            $('#list-item-folder').empty().append(htmlItem);
         });
 }
 $(document).ready(function () {
-    $('#fab').fab({
-        buttons: [
-            {
-                icon: 'fas fa-upload',
-                label: 'Upload',
-                attrs: { id: 'upload' }
-            },
-            {
-                icon: 'fas fa-folder',
-                label: 'New Folder',
-                attrs: { id: 'add-folder' }
-            }
-        ]
+    Dropzone.autoDiscover = false;
+    var previewNode = document.querySelector("#template")
+    previewNode.id = ""
+    var previewTemplate = previewNode.parentNode.innerHTML
+    previewNode.parentNode.removeChild(previewNode)
+
+    var myDropzone = new Dropzone(document.body, {
+        url: "/target-url", // Set the url
+        thumbnailWidth: 80,
+        thumbnailHeight: 80,
+        parallelUploads: 20,
+        previewTemplate: previewTemplate,
+        autoQueue: false,
+        previewsContainer: "#previews",
+        clickable: "#button-upload"
+    })
+
+    myDropzone.on("addedfile", function (file) {
+        file.previewElement.querySelector(".start").onclick = function () { myDropzone.enqueueFile(file) }
     });
 
-    actions.reverse().forEach(function (action) {
-        $('#nav-buttons > ul').prepend(
-            $('<li>').addClass('nav-item').append(
-                $('<a>').addClass('nav-link d-none')
-                    .attr('data-action', action.name)
-                    .attr('data-multiple', action.multiple)
-                    .append($('<i>').addClass('fas fa-fw fa-' + action.icon))
-                    .append($('<span>').text(action.label))
-            )
-        );
+    myDropzone.on("totaluploadprogress", function (progress) {
+        document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
     });
 
-    sortings.forEach(function (sort) {
-        $('#nav-buttons .dropdown-menu').append(
-            $('<a>').addClass('dropdown-item').attr('data-sortby', sort.by)
-                .append($('<i>').addClass('fas fa-fw fa-' + sort.icon))
-                .append($('<span>').text(sort.label))
-                .click(function () {
-                    sort_type = sort.by;
-                    loadItems();
-                })
-        );
+    myDropzone.on("sending", function (file) {
+        document.querySelector("#total-progress").style.opacity = "1"
+        // And disable the start button
+        file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
+    });
+
+    // Hide the total progress bar when nothing's uploading anymore
+    myDropzone.on("queuecomplete", function (progress) {
+        document.querySelector("#total-progress").style.opacity = "0"
     });
 
     loadFolders();
-    performLfmRequest('errors')
-        .done(function (response) {
-            JSON.parse(response).forEach(function (message) {
-                $('#alerts').append(
-                    $('<div>').addClass('alert alert-warning')
-                        .append($('<i>').addClass('fas fa-exclamation-circle'))
-                        .append(' ' + message)
-                );
-            });
-        });
 
-    $(window).on('dragenter', function () {
-        $('#uploadModal').modal('show');
+    $(document).on('click', '#button-folder', function (event) {
+        event.stopImmediatePropagation();
+        if ($('#modal-folder').hasClass('show')) {
+            $('#modal-folder').removeClass('show').fadeOut("slow");
+        } else if (!$('#modal-folder').hasClass('show')) {
+            $('#modal-folder').addClass('show').fadeIn("slow");
+        }
     });
 
-    if (usingWysiwygEditor()) {
-        $('#multi_selection_toggle').hide();
-    }
+    $(document).on('click', '#button-create', function (event) {
+        event.stopImmediatePropagation();
+
+    });
+
 });

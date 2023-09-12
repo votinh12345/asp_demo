@@ -5,6 +5,38 @@
       "PackagePath": "staticwebassets\\hienv_asp.bundle.scp.css"
     },
     {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\FileManager\\1.PNG",
+      "PackagePath": "staticwebassets\\FileManager\\1.PNG"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\FileManager\\2.PNG",
+      "PackagePath": "staticwebassets\\FileManager\\2.PNG"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\FileManager\\3.PNG",
+      "PackagePath": "staticwebassets\\FileManager\\3.PNG"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\FileManager\\4.PNG",
+      "PackagePath": "staticwebassets\\FileManager\\4.PNG"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\FileManager\\fdfds.PNG",
+      "PackagePath": "staticwebassets\\FileManager\\fdfds.PNG"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\FileManager\\ff.PNG",
+      "PackagePath": "staticwebassets\\FileManager\\ff.PNG"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\FileManager\\jjjjj.PNG",
+      "PackagePath": "staticwebassets\\FileManager\\jjjjj.PNG"
+    },
+    {
+      "Id": "D:\\C#\\asp_demo\\wwwroot\\FileManager\\yyyy.PNG",
+      "PackagePath": "staticwebassets\\FileManager\\yyyy.PNG"
+    },
+    {
       "Id": "D:\\C#\\asp_demo\\wwwroot\\css\\custom.css",
       "PackagePath": "staticwebassets\\css\\custom.css"
     },

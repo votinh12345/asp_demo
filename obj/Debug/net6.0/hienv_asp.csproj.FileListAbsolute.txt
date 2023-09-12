@@ -1246,3 +1246,6 @@ D:\C#\asp_demo\obj\Debug\net6.0\refint\hienv_asp.dll
 D:\C#\asp_demo\obj\Debug\net6.0\hienv_asp.pdb
 D:\C#\asp_demo\obj\Debug\net6.0\hienv_asp.genruntimeconfig.cache
 D:\C#\asp_demo\obj\Debug\net6.0\ref\hienv_asp.dll
+D:\C#\asp_demo\bin\Debug\net6.0\FluentValidation.dll
+D:\C#\asp_demo\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\C#\asp_demo\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
